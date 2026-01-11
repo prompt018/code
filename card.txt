@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카드 확인</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .wrap {
+      width: 350px;
+      height: 750px;
+      margin: 30px auto;
+      border:1px solid #8b8b8b;
+      overflow: hidden;
+    }
+    .imgbox {
+      width: 330px;
+      height: 300px;
+      border: 3px solid #9b9b9b;
+      margin: 10px auto;
+      margin-bottom:30px ;
+    }
+    .imgbox img {
+      display: block;
+      margin: 20px auto;
+    }
+    .img_text {
+      width: 310px;
+      height: 100px;
+     /* background-color: lightgray;*/
+      margin: 0 10px;
+      margin-bottom: 10px;
+      line-height: 1.5; /*16 X 1.5=24px*/
+    }
+    .img_text>h5:nth-child(2) {
+      font-weight:100;
+    }
+    .img_text>span {
+      font-size: 12px;
+      font-weight: 700;
+      color:#777;
+      float: left;
+      padding-top: 20px;
+    }
+    .img_text>p {
+      float: right;
+      font-size: 13px;
+      padding-right: 10px;
+      padding-top: 20px;
+    }
+    .news {
+      width:330px;
+      height: 450px;
+      /*background-color: lightgreen;*/
+      margin: 10px auto;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .news h3 {
+      width: 230px;
+      height: 30px;
+      /*background-color: lightcoral;*/
+      padding-top: 20px;
+      padding-left: 10px;
+      float: left;
+    }
+    .news p {
+      width: 60px;
+      height: 30px;
+      /*background-color: lightpink;*/
+      float: right;
+      padding-right: 10px;
+      padding-top: 26px;
+      font-size: 12px;   
+    } 
+    .news ol {
+      width: 290px;
+      height: 310px;
+     /*background-color: lightgreen;
+      border: 1px solid black;*/
+      margin:5px ;
+      padding-top: 10px;
+      overflow: hidden;
+      padding-left: 30px;
+      color: red;
+      font-weight: 600;
+    }
+    .news ol li {
+      line-height: 2.0;
+      /* 16 X 2.0=32px */
+    }
+    .news ol li a {
+      color: #444;
+      padding-left: 10px;
+      font-size: 15px;
+    }
+    .news ol li a:hover {
+      color:#000;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="imgbox"><img src="./card_img.PNG" alt="img">
+    <div class="img_text">
+      <h5>전 매직 안하고 이것만 발라요!</h5>
+      <h5>비싼 매직은 이제 그만</h5>
+      <span>563lab</span>
+      <p><a href="#">지금 구매하기 &#62 </a></p>
+    </div>
+    </div>
+    <div class="news">
+      <h3>많이 본 TV 연예 뉴스</h3>
+      <p><a href="#">더보기 ▶</a></p>
+      <ol>
+        <li><a href="#">엄마의 웃픈 실수</a></li>
+        <li><a href="#">민망한 섭외 논란</a></li>
+        <li><a href="#">종방연</a></li>
+        <li><a href="#">넌 친딸이 아니야</a></li>
+        <li><a href="#">억만장자</a></li>
+        <li><a href="#">총체적 난국</a></li>
+        <li><a href="#">학폭결말은 퇴출 엔딩</a></li>
+        <li><a href="#">신성한, 이혼</a></li>
+        <li><a href="#">공황장애</a></li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
