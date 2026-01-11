@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>계단만들기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+        h2 {
+            text-align: center;
+            color: blue
+        }
+
+        div {
+            font-size: 50px;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+
+        .box1 {
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+
+        .box2 {
+            width: 250px;
+            height: 100px;
+            background-color:lightsalmon;
+            margin-left: 200px;
+        }
+
+        .box3 {
+            width: 350px;
+            height: 100px;
+            background-color: lightskyblue;
+            margin-left: 200px;
+        }
+
+        .box4 {
+            width: 450px;
+            height: 100px;
+            background-color: lightgreen;
+            margin-left: 200px;
+        }
+
+        .box5 {
+            width: 550px;
+            height: 100px;
+            background-color: lightpink;
+            margin-left: 200px;
+        }
+
+        .box6 {
+            width: 650px;
+            height: 100px;
+            background-color: #5882FA;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 계단 만들기  -->
+    <h2> ※ 실습조건 : 위쪽, 왼쪽 여백 200px, 계단0 ☞ w:150, h:100 으로 (너비 100px 늘이기) </h2>
+    <div class="box1">계단0</div>
+    <div class="box2">계단1</div>
+    <div class="box3">계단2</div>
+    <div class="box4">계단3</div>
+    <div class="box5">계단4</div>
+    <div class="box6">계단5</div>
+</body>
+
+</html>
