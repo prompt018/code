@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  * {
+   margin: 0;padding: 0;
+  }
+  ul,li {
+   list-style: none;
+  }
+  a {
+   text-decoration: none;
+   color: inherit;
+  }
+  .title {
+   width: 440px;
+   height: 170px;
+   border: 1px solid #ddd;
+   background-color: #fff;
+   border-radius: 10px;
+   margin: 100px auto;
+  }
+  .naver {
+   width: 400px;
+   height: 30px;
+   /*border: 1px solid;*/
+   padding-left: 10px;
+   line-height: 30px;
+   margin: 10px auto;
+   text-align: center;
+  }
+  .login {
+   width: 400px;
+   height: 60px;
+   background-color: #18ce60;
+   margin: 0 auto;
+   text-align: center;
+   color: #fff;
+   font-size: 25px;
+   line-height: 60px;
+   border-radius: 5px;
+  }
+  .text {
+   width: 400px;
+   height: 45px;
+   /*border: 1px solid;*/
+   margin:5px auto;
+   line-height: 45px;
+   text-align: center;
+  }
+  .text ul {
+   display: inline-block;
+   /*border: 1px solid;*/
+  }
+  .text ul li {
+   float: left;
+   padding: 2px;
+   box-sizing: border-box;
+   margin-right: 20px;
+   font-size: 14px;
+   text-align: center;
+   color: #333;
+   letter-spacing: 1px;
+  }
+  .text ul li:nth-child(1) {
+   margin-left: 10px;
+  }
+  .text ul li a:hover {
+   text-decoration: underline;
+  }
+ </style>
+</head>
+<body>
+ <div class="title">
+  <p class="naver">네이버를 더 안전하고 편리하게 이용하세요</p>
+  <div class="login">NAVER 로그인</div>  
+  <div class="text">
+   <ul>
+    <li><a href="#">아이디 찾기</a></li>
+    <li>|</li>
+    <li><a href="#">비밀번호 찾기</a></li>
+    <li>|</li>
+    <li><a href="#">회원가입</a></li>
+   </ul>
+  </div>  
+ </div>
+</body>
+</html>
