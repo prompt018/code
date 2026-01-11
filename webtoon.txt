@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>webtoon</title>
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+  }
+  li {
+   list-style: none;
+  }
+  a {
+   text-decoration: none;
+   color: inherit;
+  }
+  img {
+   display: block;
+  }
+  .container {
+   width: 1000px;
+   height: 600px;
+   border: 1px solid #747474;
+   margin: 100px auto;
+   border-radius: 5px;
+   background-color: #f9f9f9;
+  }
+  .menu {
+   width: 100%;
+   height: 80px;
+   line-height: 80px;
+   /*background-color: lightcoral;*/
+   text-align: center;
+   font-weight: 500;
+  }
+  .menu ul {
+   display: inline-block;
+  }
+  .menu ul li {
+   float: left;
+   padding:0 40px;
+  }
+  .content {
+   width: 100%;
+   height: 520px;
+   /*background-color: lightgreen;*/
+  }
+  .left, .right {
+   width: 50%;
+   height: 100%;
+   /*background-color: lightgrey;*/
+   float: left;
+  }
+  .left img {
+   margin: 25px auto;
+   box-shadow: 0 10px 15px #333;
+  }
+  .left h3 {
+   margin: 20px ;
+  }
+  .left p {
+   margin-left: 30px;
+   width: 400px;
+   /*border: 1px solid;*/
+   padding: 10px;
+  }
+  .left span {
+   margin-left: 30px;
+   letter-spacing: 1px;
+  }
+  .right .top,
+  .right .middle,
+  .right .btm {
+   width: 100%;
+   height: 171px;
+   float: left;
+   /*border: 1px solid;*/
+   box-sizing: border-box;
+  }
+  .right .top img,
+  .right .middle img,
+  .right .btm img {
+   float: left;
+   margin: 20px 30px;
+   box-shadow: 0 10px 15px #333;
+  }
+  .right .top .top_text,
+  .right .middle .middle_text,
+  .right .btm .btm_text{
+   float: left;
+  }
+  .right .top .top_text h3,
+  .right .middle .middle_text h3,
+  .right .btm .btm_text h3 {
+   margin-top: 25px;
+   margin-bottom: 5px;
+  }
+  .right .top .top_text p,
+  .right .middle .middle_text p,
+  .right .btm .btm_text p {
+   width: 300px;
+   padding: 5px;
+  }
+  .right .top .top_text span,
+  .right .middle .middle_text span,
+  .right .btm .btm_text span {
+   margin-left: 20px;
+   letter-spacing: 1px;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="container">
+  <div class="menu">
+   <ul>
+    <li><a href="#">엔터</a></li>
+    <li><a href="#">스포츠</a></li>
+    <li><a href="#">자동차</a></li>
+    <li><a href="#">웹툰</a></li>
+    <li><a href="#">경제</a></li>
+    <li><a href="#">추천,구독</a></li>
+    <li><a href="#">레시피</a></li>
+   </ul>
+  </div>
+  <div class="content">
+   <div class="left">
+    <img src="./01.JPG" alt="img">
+    <h3>&#60 투신 전생기 &#62</h3>
+    <p>열렸던 드래곤 레이디의 문이 닫히려 한다.</p>
+    <span>- 청담 -</span>
+   </div>
+   <div class="right">
+    <div class="top">
+     <img src="./02.JPG" alt="img2">
+     <div class="top_text">
+      <h3>웹툰</h3>
+      <p>한 주 마무리는 일요웹툰이 국룰이지</p>
+      <span>- 웹툰으로 기분전환 -</span>
+     </div>
+    </div>
+
+    <div class="middle">
+     <img src="./03.JPG" alt="img3">
+     <div class="middle_text">
+      <h3>웹툰</h3>
+      <p>그대가 모시는 신 귀염뽀작 하시네요</p>
+      <span>- 웹툰으로 기분전환 -</span>
+     </div>
+    </div>
+
+    <div class="btm">
+     <img src="./04.JPG" alt="img4">
+     <div class="btm_text">
+      <h3>웹툰</h3>
+      <p>악마랑 전쟁을 한다고요?<br>망상이 불러온 결말</p>
+      <span>- 아포크리피 -</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</body>
+
+</html>

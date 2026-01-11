@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>coupon</title>
+ <style>
+  @font-face {
+   font-family: 'MaplestoryOTFBold';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+  * {
+   margin: 0;
+   padding: 0;
+   font-family: 'MaplestoryOTFBold';
+   letter-spacing: 1px;
+  }
+  a {
+   text-decoration: none;
+   color: inherit;
+  }
+  .container {
+   width: 600px;
+   height: 690px;
+   background-image: url(./couponbackground.jpg);
+   background-size:100%;
+   background-repeat: no-repeat;
+   margin: 100px auto;
+   overflow: hidden;
+   border-radius: 30px; 
+   box-shadow: 0px 5px 20px #222;
+  }
+  .text {
+   width: 500px;
+   height: 100px;
+   /*background-color: lightblue;*/
+   margin: 30px auto;
+   text-align: center;
+   line-height: 45px;
+  }
+  .text h1 {
+   color: #f5f5f5;
+   padding: 5px;
+   font-size: 40px;
+   text-shadow: 2px 2px 2px #000;
+  }
+  .text h1 span {
+   font-size: 28px;
+   color: rgb(236, 236, 171);
+   text-shadow: 2px 2px 2px #000;
+  }
+  .coupon {
+   width: 100%;
+   height: 400px;
+   /*border: 1px solid ;*/
+   overflow: hidden;
+  }
+  .coupon_top {
+   width: 440px;
+   height: 200px;
+   margin: 0 auto;
+  }
+  .coupon_top p {
+   width: 200px;
+   height: 180px;
+   border: 1px solid #333;
+   float: left;
+   margin: 10px;
+   box-sizing: border-box;
+   text-align: center;
+  }
+  .coupon_top p a,
+  .coupon_btm p a {
+   font-size: 20px;
+   display: block;/**/
+   height: 100%;/**/
+   text-align: center;
+   line-height: 30px;
+  }
+  .coupon_btm {
+   width: 440px;
+   height: 200px;
+   margin: 0 auto;
+   /*background-color: lightsalmon;*/
+  }
+  .coupon_btm p {
+   width: 200px;
+   height: 180px;
+   border: 1px solid #333 ;
+   float: left;
+   margin: 10px;
+   box-sizing: border-box;
+   text-align: center;
+  }
+  .coupon_top p:nth-of-type(1) {
+   background-image: linear-gradient(to top, yellow, skyblue);
+   box-shadow: -3px -3px 1px blue;
+   padding-top: 50px;
+  }
+  .coupon_top p:nth-of-type(2) {
+   background-image: linear-gradient(-45deg, purple, White);
+   box-shadow: 3px -3px 1px purple;
+   padding-top: 45px;
+  }
+  .coupon_btm p:nth-of-type(1) {
+   background-image: linear-gradient(to bottom, yellow, skyblue);
+   box-shadow: -3px 3px 1px black;
+   padding-top: 45px;
+  }
+  .coupon_btm p:nth-of-type(2) {
+   background-image: linear-gradient(45deg, purple, White,violet );
+   box-shadow: 3px 3px 1px black;
+   padding-top: 45px;
+  }
+  .button {
+   width: 340px;
+   height: 50px;
+   background-color: #eeecec;
+   display: block;
+   margin: 30px auto;
+   border-radius: 50px;
+   text-align: center;
+   color: #222;
+   font-weight: bold;
+   line-height: 50px;
+   font-size: 18px;
+   box-shadow: 4px 4px 1px #111010;
+  }
+ </style>
+</head>
+<body>
+ <div class="container">
+  <div class="text">
+   <h1>
+    놓치면 후회하는 <br><span>쿠폰 + 적립 혜택!</span>
+   </h1>
+  </div>
+  <div class="coupon">
+   <div class="coupon_top">
+    <p>
+     <a href="#">원쁠딜<br>특가할인</a>
+    </p>
+
+    <p>
+     <a href="#">상품별<br>추가쿠폰<br>+ 적립</a>
+    </p>
+   </div>
+   <div class="coupon_btm">
+    <p>
+     <a href="#">원쁠딜 공유<br>추가적립<br>1%</a>
+    </p>
+
+    <p>
+    <a href="#">네이버플러스<br>멤버십 적립<br>최대 5%</a>
+    </p>
+   </div>
+  </div>
+  <a href="#" class="button">공유추가적립 방법 확인▶</a>
+ </div>
+</body>
+</html>

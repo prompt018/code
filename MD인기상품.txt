@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD'S 인기상품</title>
+
+  <link href="./style.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+  <div class="box">
+    <div class="header">
+      <!--<div class="img"><img src="./3.png" alt="엄지척"></div>-->
+      <div class="pick">MD'S PICK</div>
+      <div class="product">
+        MD 선정 인기 상품 <br><span>품질부터 가격까지 꼼꼼하게 챙겼어요</span></div>
+    </div>
+
+    <div class=" content">
+
+      <div class="left">
+        <div class="left_pro"><img src="./01.JPG" alt=""></div>
+        <p>단품구성</p><h4>무료배송</h4><h6>75%↓</h6><h5><del>3,200,000</del></h5>
+        <div class="left_text">
+          필립스 50인치 스마트 TV<br><span>￦800,000</span>
+        </div>        
+      </div>
+
+      <div class="right">
+        <div class="right_pro"><img src="./02.JPG" alt=""></div>
+        <p>1+@</p><h4>무료배송</h4><br>
+        <div class="right_text">선물로 딱!~<br>프라카 폴란드풍 항아리<br>머그중 선택</div>
+      </div>
+      <div class="last">
+        <div class="last_left"><a href="#">&#60</a></div>
+        <div class="last_mid"><a href="#">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</a></div>  
+        <div class="last_right"><a href="#">&#62</a></div>
+      </div>
+
+    </div>
+    <button class="b_tn">구매하기</button>
+
+
+
+  </div>
+</body>
+
+</html>
