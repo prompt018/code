@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>목록만들기-4</title>
+  
+</head>
+<body>
+  <h1>공지사항 안내</h1> 
+  <h3> ♣ AI-POT 2급 문제형식 및 문항배점</h3>
+  <ol>
+    <li>문제 수 및 문항 형식
+      <ol type="a">
+        <li>문제 수 : 총 5개 뫄목, 총 30문항 출제/li>
+        <li>문항형식 : 이론형 20문항, 실습형 10문항</li>
+      </ol>
+    </li><br>    
+    <li>문항 배점
+      <ol type="a" start="3">
+        <li>이론형 : 20문항 각 3점(60점)</li>
+        <li>실습형 : 10문항 각 4점(40점)</li>
+      </ol>
+    </li>
+  </ol>
+  <br><hr><br>
+
+  <h3> ♠ 보건의료 빅데이터 포럼</h3>
+  <ol type="I">
+    <li>주제 및 대상
+      <ol type="i">
+        <li>주제 : 인공지능 시대, 보건의료 빅데이터 활용 방향</li>
+        <li>대상 : 보건의료 빅데이터 활용 연구자 및 전문가</li>
+      </ol>
+    </li><br>    
+    <li>일시 및 장소
+      <ol type="i" start="3">
+        <li>일시 : 2025. 03.31(월) 13 : 30 ~ 16 : 00 </li>
+        <li>장소 : aT센터 세계로룸</li>
+      </ol>
+    </li>
+  </ol>
+  <br><hr><br>
+
+  <h2> ◐ 전기차 충전속도에 따른 충전기 ◑</h2>
+  <ol type="I">
+    <li>전기차 급속 충전기
+      <ol type="A">
+        <li>완전방전상태에서 80% 충전까지 30분이 소요됨</li>
+        <li>주로 고속도로 휴게소, 공공기관 등 외부 장소에 설치
+          <ul>
+            <li>각 시청, 경부고속도로, 중앙고속도로 상향선, 하향선 </li>
+          </ul>
+        </li>
+      </ol>
+    </li><br>    
+    <li>전기차 완속 충전기
+      <ol type="A" start="3">
+        <li>완전방전상태에서 완전충전까지 4 ~ 5시간이 소요됨 </li>
+        <li>주택이나 아파트에설치
+          <ul>
+            <li>전기요금은 100kWh당 약 1,100원</li>
+            <li>아파트 출입구 차단기옆 3km 근처에 설치</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</body>
+</html>

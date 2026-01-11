@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록만들기-2</title>
+</head>
+<body>
+    <hr>
+    <h1>오늘 끼니 메뉴 선택?</h1>
+    <hr>
+
+    <ul>
+        <li>볶음밥
+            <ul type="disc">
+                <li>김치 볶음밥</li>
+                <li>불고기볶음밥</li>
+                <li>스팸볶음밥</li>
+                <li>새우볶음밥</li>
+                <li>깍두기볶음밥</li>
+            </ul>
+        </li><br>
+        <li type="circle">덮밥
+            <ul>
+                <li>마파두부덮팝</li>
+                <li>차슈덮밥</li>
+                <li>낚지덮밥</li>
+                <li>오징어덮밥</li>
+                <li>연어덮밥</li>
+            </ul>
+        </li><br>
+        <li type="square">국물요리
+            <ul type="square">
+                <li>굴국밥</li>
+                <li>해물탕</li>
+                <li>매운탕</li>
+            </ul>
+        </li><br>
+        <li>찌개요리
+            <ul>
+                <li>된장찌개</li>
+                <li>김치찌개</li>
+                <li>부대찌개</li>
+                <li>동태찌개</li>
+            </ul>
+        </li><br>
+        <li type="square">전골요리
+            <ul>
+                <li>곱창전골</li>
+                <li>김치전골</li>
+                <li>두부전골</li>
+                <li>만두전골</li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>

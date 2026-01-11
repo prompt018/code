@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개</title>
+</head>
+<body>
+    <h1>대행사</h1>
+    <h2>
+    <br><br>VC그룹 최초로 <b>여성 임원</b>이 된 '고아인' <br><br>
+    <hr> 최초를 넘어 최고의 위치까지 <mark>자신의 커리어</mark>를 만들어가는 모습을 그린 <br><br>
+    우아하게 처절한 광고대행사 <strong>오피스 드라마</strong></h2>
+
+    <a href="https://tv.jtbc.co.kr/agency" target="_blank">  <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fditto-phinf.pstatic.net%2F20230104_65%2F1672798179579m366j_PNG%2F860790a19ecf1273c840ad48ceb0b0e6.png&type=o&size=488x470&ttype=input" alt="대행사" title="대행사"> </a>
+    
+    
+</body>
+</html>

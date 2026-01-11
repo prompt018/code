@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>목록만들기-1</title>
+</head>
+
+<body>
+  <h1>◐ 월드 스마트 시티 엑스포 개요 ◑</h1>
+  
+ <h3>일시 및 장소</h3>
+   <ul>
+     <h4>
+     <li>일시 : 2023년 9월 6일 (수) ~ 9월 8일 (금)</li>
+     <li>장소 : 킨텍스 제1전시장 2-5 홀</li>
+     </h4>
+   </ul>
+ 
+ <h3>주최 및 주관</h3>
+   <ul>
+     <li>주최 :국토 교통부, 과학기술정보 통신부</li>
+     <li>주관 : 한국토지주택공사, 한국 수장원 공사 </li>
+   </ul>
+ 
+</ul>
+<br>
+
+ <h3>무제 일정</h3>
+ <ol type="I">
+  <li>입춘맞이 : 1/27 (월) ~ 1/31 (금)</li>
+  <li>낭쉐코사 : 2/1 (토)</li>
+  <li>거리굿&nbsp;&nbsp;&nbsp;&nbsp;: 2/2 (일)</li>
+  <li>열림굿&nbsp;&nbsp;&nbsp;&nbsp;: 2/3 (월)</li>
+  <li>입춘굿&nbsp;&nbsp;&nbsp;&nbsp;: 2/4 (화)</li>
+ </ol>
+
+ <ul type="square">
+  <li>입동맞이
+   <ul>
+    <li>11/27 (월) ~ 11/30 (금)</li>
+    <li>12/17 (월) ~ 12/31 (금)</li>
+ </ul>
+  </li>
+  <li>낭쉐코사 : 12/11 (토)</li>
+  <li>거리굿 : 12/22 (일)</li>
+  <li>열림굿 : 12/30 (월)</li>
+  <li>입춘굿 : 2/4 (화)</li>
+  </ul>
+
+  <br>
+  <h3>Chat GPT</h3>
+  <ol>
+    <li>Chat GPT란?</li>
+    <li>Chat GPT와 검색 엔진 차이점</li>
+    <li>국가별 AI기술 수준 및 기술 격차</li>
+    <li>생성형 AI 주요 개발 현황 </li>
+  </ol>
+  <br>
+  <hr> 
+</body>
+</html>

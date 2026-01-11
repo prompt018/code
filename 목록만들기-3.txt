@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록만들기-3</title>
+   
+</head>
+<body>
+    <h3>◐ CPU와 Hardware 5대 장치 종류 ◑</h3>
+    <ol type="A">
+        <li>연산장치</li>
+        <li>제어장치</li>
+        <li>레지스터</li>
+        <li>주기억장치</li>
+        <li>보조기억장치</li>
+        <li>입출력장치</li>
+    </ol>
+    <ul>
+        <li>주기억장치-RAM
+            <ul type="circle">
+                <li>DRAM</li>
+                <li>SRAM</li>
+            </ul>
+        </li>
+        <br>
+        <li>주기억장치-ROM
+            <ul type="circle">
+                <li>MASK-ROM</li>
+                <li>P-ROM</li>
+                <li>EP-ROM</li>
+                <li>EEP-ROM</li>
+            </ul>
+        </li>        
+        <br>
+        <li>기억장치종류
+            <ul type="circle" >
+                <li>캐시메모리</li>
+                <li>가상메모리</li>
+                <li>플래시메모리</li>
+                <li>연상메모리</li>
+            </ul>
+        </li>
+        <br>
+        <li>입력장치
+          <ul>
+            <li>스캐너</li>
+            <li>디지타이저</li>
+            <li>OCR, OMR, MICR</li>
+            <li>터치스크린</li>
+          </ul>
+        </li>
+        <br>
+        <li>출력장치
+          <ul>
+            <li>모니터</li>
+            <li>프린터</li>
+            <li>스피커</li>
+            <li>플로터</li>
+            <li>영상프로젝터</li>
+          </ul>
+        </li>
+    </ul>
+</body>
+</html>
