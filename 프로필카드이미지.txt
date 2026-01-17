@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>내 프로필</title>
+</head>
+<body>
+  <h1>나의 프로필</h1>
+
+  <img src="./img/profile-2.png" alt="프로필 사진" width="220" />
+
+  <h2>소개</h2>
+  <p>**‘몽당’**은 '몽당연필'처럼 다 닳아 없어질 때까지 쓰이는 것,<br> 또는 작고 쓸모없다고 여겨지는 것들의 아름다움을 연상시킵니다.</p>
+  <p>HTML의 기본 태그를 활용해 자기소개 페이지를 만들고 있습니다.</p>
+
+  <h2>좋아하는 것</h2>
+  <ul>
+    <li>커피</li>
+    <li>음악</li>
+    <li>산책</li>
+    <li>영화</li>
+  </ul>
+
+  <h2>바로가기 링크</h2>
+  <ul>
+    <li><a href="https://www.naver.com" target="_blank">네이버</a></li>
+    <li><a href="https://www.google.com" target="_blank">구글</a></li>
+    <li><a href="https://www.youtube.com" target="_blank">유튜브</a></li>
+  </ul>
+
+  <p>오늘은 a 태그와 img 태그를 연습했습니다.</p>
+</body>
+</html>

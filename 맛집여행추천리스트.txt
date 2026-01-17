@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>추천 리스트</title>
+</head>
+<body>
+  <h1>추천 리스트</h1>
+  <p>제가 좋아하는 장소와 사이트를 정리한 페이지입니다.</p>
+
+  <h2>추천 장소 1</h2>
+  <img src="./img/sea.jpg" alt="추천 장소 사진 1" width="280" />
+  <p>조용하고 분위기가 좋은 곳이라 쉬고 싶을 때 방문합니다.</p>
+  <p>
+    관련 링크:
+    <a href="https://map.naver.com" target="_blank">지도에서 보기</a>
+  </p>
+
+  <h2>추천 장소 2</h2>
+  <img src="./img/yoav-aziz-BSu_PPb8GPY-unsplash.jpg" alt="추천 장소 사진 2" width="280" />
+  <p>맛있는 음식을 먹을 수 있는 곳입니다.</p>
+  <p>
+    관련 링크:
+    <a href="https://www.instagram.com" target="_blank">인스타그램 보기</a>
+  </p>
+
+  <h2>추천 사이트</h2>
+  <ul>
+    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+    <li><a href="https://www.figma.com" target="_blank">FIGMA</a></li>
+    <li><a href="https://www.daum.net" target="_blank">DAUM</a></li>
+  </ul>
+
+</body>
+</html>
