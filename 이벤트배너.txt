@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 배너 전체   */
+        .event-banner {
+            width: 500px;
+            height: 180px;
+            margin: 100px auto;
+            border: 5px dashed #ff4500; /* 점선 테두리로 변경 */
+            border-radius: 20px;
+            background-color: #fff5f0;
+            padding: 20px;
+            box-shadow: 10px 10px 0px #ff4500; /* 그림자 */
+        }
+
+        /* 왼쪽 할인율 박스 */
+        .coupon-circle {
+            width: 130px;
+            height: 130px;
+            background-color: #ff4500;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 130px;
+            font-size: 40px;
+            font-weight: bold;
+            float: left; /* 가로 배치를 위해 추가 */
+            margin-right: 30px;
+            margin-top: 10px;
+        }
+
+        /* 오른쪽 텍스트 영역 */
+        .info-area {
+            float: left;
+            margin-top: 20px;
+        }
+
+        .main-text {
+            font-size: 35px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sub-text {
+            font-size: 18px;
+            color: #666;
+            background-color: #ffd700;
+            display: inline-block; /* 글자 길이만큼만 배경색 */
+            padding: 5px 15px;
+            border-radius: 50px;
+        }
+        p {
+          margin-top: 15px; color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="event-banner">
+        <div class="coupon-circle">50%</div>
+
+        <div class="info-area">
+            <div class="main-text">신규 가입 감사 세일!</div>
+            <div class="sub-text">코드: WELCOME2026</div>
+            <p>* 4월 30일까지만 진행되는 한정 이벤트!</p>
+        </div>
+    </div>
+
+</body>
+</html>

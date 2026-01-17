@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>컬러 바코드 만들기</title>
+    <style>
+        /* 컨테이너 중앙 정렬 */
+        .container { 
+          width: 500px; 
+          margin: 50px auto; 
+          text-align: center;
+          /*border: 1px solid ;*/
+        }
+
+        /* 제목 스타일 */
+        h1 { 
+          color: rgb(235, 5, 143); 
+          font-size: 40px; 
+        }
+        
+        /*  공통 박스 스타일 */
+        .bar { 
+          height: 50px; 
+          margin-bottom: 5px; 
+          line-height: 50px; 
+          color:#333; 
+          font-weight: bold; }
+
+        /* 개별 너비 및 색상 */
+        .b1 { width: 100px; background-color: lightcoral; }
+        .b2 { width: 300px; background-color: lightsalmon; }
+        .b3 { width: 200px; background-color: lightskyblue; }
+        .b4 { width: 450px; background-color: #5882FA; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COLOR BAR</h1>
+        <div class="bar b1">100px</div>
+        <div class="bar b2">300px</div>
+        <div class="bar b3">200px</div>
+        <div class="bar b4">450px</div>
+        <p>※ 각 바의 너비와 색상을 코드와 똑같이 맞추세요!</p>
+    </div>
+</body>
+</html>
