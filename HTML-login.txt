@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>HTML-Login</title>
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+  * {
+   margin: 0;
+   padding: 0;
+  }
+  .wrap {
+    width: 450px;
+    height: 600px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0px 10px 15px gray;
+  }
+  .top {
+   width: 280px;
+   height: 80px;
+   padding: 5px;
+   /*border: 1px solid;*/
+   margin: 0px auto;
+   margin-top: 80px;
+   text-align: center;
+   line-height: 80px;font-size: 70px;
+   font-family: 'Climate Crisis', cursive;
+  }
+  .middle {
+   width: 290px;
+   height: 200px;
+   /*background-color: *lightcoral;*/
+   margin: 0 auto;
+   margin-top: 30px;
+   overflow: hidden;
+  }
+  .id, 
+  .pw {
+   width: 270px;
+   height: 50px;
+   line-height: 50px;
+   border: 1px solid #999;
+   margin: 20px auto;
+   margin-top: 10px;
+   padding-left: 5px;
+   color: #999897;
+   font-size: 12px;
+  }
+  .id_save,
+  .pw_save {
+   width: 130px;
+   height: 30px;
+   line-height: 30px;
+   float: left;
+   /*background-color: lightgreen;*/
+   margin-left: 10px;
+  }
+  .id_save span {
+   width: 10px;
+   height: 10px;
+   background-color: #fff;
+   display: block;
+   border: 1px solid;
+   float: left;
+   margin:10px 5px;   
+  }
+  .pw_save span {
+   width: 10px;
+   height: 10px;
+   background-color: #fff;
+   display: block;
+   border: 1px solid;
+   float: left;
+   margin:10px 5px; 
+  }
+
+  button {
+   width: 290px;
+   height: 60px;
+   display: block;
+   margin: 0 auto;
+   margin-top: 40px;
+   cursor: pointer;   
+   background-color: brown;
+   border-radius: 10px;
+   font-size: 24px;
+   color: #f1f2f3;
+   letter-spacing: 2px;
+   border: none;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="wrap">
+  <div class="top">HTML</div>
+  <div class="middle">
+   <div class="id">아이디</div>
+   <div class="pw">비밀번호</div>
+   <div class="id_save">
+    <span></span>
+    <p>아이디저장</p>
+   </div>
+
+   <div class="pw_save">
+    <span></span>
+    <p>패스워드저장</p>
+   </div>
+  </div>
+  
+  <button>로그인</button>
+ </div>
+</body>
+
+</html>
