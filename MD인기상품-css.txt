@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Black+Han+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&family=Orbitron:wght@400..900&family=Poiret+One&display=swap');
+
+@font-face {
+  font-family: 'MaplestoryOTFBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cafe24Supermagic-Bold-v1.0';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  /* 전체 박스*/
+  width: 820px;
+  height: 870px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: linear-gradient(25deg, #042a04 0%, #EFFBEF 50%, #0c301e 100%);
+  border: 2px solid #c5c6c5;
+}
+
+.header {
+  /* top 텍스트 3줄 영역 */
+  width: 620px;
+  height: 280px;
+  /* border: 3px solid #0e0e0e;
+  background-color: cadetblue;*/
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: -120px;
+}
+
+.img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding-top: -10px;
+  margin-right: -120px;
+  background-color: #071907;
+}
+
+.pick {
+  /*MD's PICK*/
+  width: 400px;
+  height: 100px;
+  /* border: 1px solid black;*/
+  border-radius: 100px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 55px;
+  color: #0A2A0A;
+  font-weight: bold;
+  line-height: 100px;
+  box-sizing: border-box;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.product {
+  /*MD 선정 인기 상품*/
+  width: 550px;
+  height: 70px;
+  line-height: 1.2;
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 50px;
+  color: #fff;
+  font-family: 'MaplestoryOTFBold';
+}
+
+span {
+  /*품질부터 가격까지 꼼꼼히 챙겼어요*/
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #0B3B0B;
+  font-family: 'MaplestoryOTFBold';
+}
+
+.content {
+  /*왼쪽,오른쪽 흰색배경*/
+  width: 780px;
+  height: 400px;
+  background: #fff;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+
+.left {
+  /*왼쪽 박스*/
+  width: 340px;
+  height: 400px;
+  float: left;
+  /* border: 1px solid black;*/
+  margin: 10px;
+  margin-left: 30px;
+  box-sizing: border-box;
+}
+
+.left p {
+  float: left;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  background-color: #333;
+  color: #f2f2f2;
+  margin: 10px;
+  margin-left: 35px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: none;
+  cursor: pointer;
+}
+
+.left h4 {
+  float: left;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  border: 1px solid black;
+  color: #222;
+  margin: 10px;
+  margin-left: -5px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: none;
+  cursor: pointer;
+}
+
+.left h6 {
+  float: left;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10px;
+  /*border: 1px solid black;*/
+  color: red;
+  margin-top: 10px;
+  margin-left: -5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.left h5 {
+  float: left;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 8px;
+  /*border: 1px solid black;*/
+  margin-top: 10px;
+  /*margin-left: 2px;*/
+  text-align: center;
+  font-weight: bold;
+}
+
+.left span {
+  font-size: 16px;
+  color: #000;
+}
+
+.right {
+  /*오른쪽 박스*/
+  width: 350px;
+  height: 400px;
+  float: left;
+  /*border: 1px solid black;*/
+  margin: 10px;
+  margin-left: 30px;
+  box-sizing: border-box;
+}
+
+.left_text {
+  /*왼쪽 텍스트박스*/
+  width: 280px;
+  height: 60px;
+  line-height: 28px;
+  /*border: 1px solid black;*/
+  padding-top: 20px;
+  margin: 0 auto;
+  margin: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Cafe24Supermagic-Bold-v1.0';
+}
+
+.left_pro {
+  /*왼쪽 제품이미지 넣는곳*/
+  width: 290PX;
+  height: 200px;
+  /*border: 1px solid black; */
+  box-sizing: border-box;
+  margin: 20px auto 10px;
+}
+
+.right_pro {
+  /*오른쪽 제품이미지 넣는것*/
+  width: 290PX;
+  height: 200px;
+  /* border: 1px solid black;*/
+  box-sizing: border-box;
+  margin: 20PX auto 10px;
+}
+
+img {
+  /* 왼쪽, 오른쪽 이미지*/
+  width: 280PX;
+  height: 200px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+}
+
+.right p {
+  float: left;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: red;
+  color: #f2f2f2;
+  margin: 10px;
+  margin-left: 35px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: none;
+  cursor: pointer;
+}
+
+.right h4 {
+  float: left;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  border: 1px solid black;
+  color: #222;
+  margin: 10px;
+  margin-left: -5px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: none;
+  cursor: pointer;
+}
+
+.right_text {
+  /*오른쪽 텍스트 박스*/
+  width: 280px;
+  height: 120px;
+  line-height: 30px;
+  /* border: 1px solid black;*/
+  margin: 0 auto;
+  margin: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Cafe24Supermagic-Bold-v1.0';
+}
+
+.last {
+  width: 350px;
+  height: 50px;
+  line-height: 50px;
+  /*border: 1px solid black;*/
+  margin: 30px auto ;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.last_left {
+  width: 40px;
+  height: 50px;
+  float: left;
+  /*border: 1px solid gray;*/
+  margin-left: 15px;
+  font-size: 32px;
+  text-align: right;
+  line-height: 50px;
+}
+
+.last_mid {
+  width: 200px;
+  height: 50px;
+  float: left;
+  /*border: 1px solid black;
+  background-color: #f0f1f2;*/
+  margin-left: 15px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.last_right {
+  width: 40px;
+  height: 50px;
+  float: left;
+  /*border: 1px solid black;
+  background-color: #f0f1f2;*/
+  margin-left: 15px;
+  font-size: 32px;
+  text-align: left;
+  line-height: 50px;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  /*border: 1px solid black;*/
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  /*background: linear-gradient(15deg, #058b20 0%, #EFFBEF 50%, #059c23 100%);*/
+  background-color: #f0efef;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'MaplestoryOTFBold';
+  letter-spacing: 5px;
+  color: #0B3B0B;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}

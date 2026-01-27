@@ -6,14 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MD'S 인기상품</title>
-
   <link href="./style.css" rel="stylesheet">
-  
-
 </head>
 
 <body>
-  <div class="box">
+  <div class="container">
     <div class="header">
       <!--<div class="img"><img src="./3.png" alt="엄지척"></div>-->
       <div class="pick">MD'S PICK</div>
@@ -37,13 +34,13 @@
         <div class="right_text">선물로 딱!~<br>프라카 폴란드풍 항아리<br>머그중 선택</div>
       </div>
       <div class="last">
-        <div class="last_left"><a href="#">&#60</a></div>
-        <div class="last_mid"><a href="#">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</a></div>  
-        <div class="last_right"><a href="#">&#62</a></div>
+        <p class="last_left"><a href="#">&#60</a></p>
+        <p class="last_mid"><a href="#">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</a></p>  
+        <p class="last_right"><a href="#">&#62</a></p>
       </div>
 
     </div>
-    <button class="b_tn">구매하기</button>
+    <button>구매하기</button>
 
 
 
