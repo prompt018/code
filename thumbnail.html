@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Thumbnail Gallery</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+.gallery {
+  width: 1200px;
+  margin:50px auto;
+  /*background-color: lightcoral;*/
+}
+
+.gallery::after {
+  content:"";
+  display:block;
+  clear:both; /*clear:both라 쓰고 clearfix 라고 부른다.*/
+  /*border: 1px solid;*/
+}
+
+.card {
+  width: 270px;
+  height: 330px;
+  /*float:left;*/
+  display: inline-block;
+  margin: 15px 30px 15px 0;
+  border:1px solid #ddd;
+  background:#fff;
+}
+.card:nth-child(1) {
+  margin-left:7px;
+}
+.card:nth-child(4n) { /*가로 갯수만큼 수열지정*/
+  margin-right:0;
+}
+
+/* 이미지 틀 */
+.thumb {
+  width:100%;
+  height:260px;        /* 이미지 기준 높이 */
+  overflow:hidden;
+}
+
+.thumb img {
+  width:100%;
+  display:block;
+}
+
+.card .info {
+  padding:10px;
+}
+
+.card .info h4 {
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+.card .info p {
+  font-size:13px;
+  color:#666;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+
+  <div class="card">
+    <div class="thumb">
+      <img src="./img/goods-1.jpg" alt="img">
+    </div>
+    <div class="info">
+      <h4>상품 제목 1</h4>
+      <p>간단한 설명 텍스트</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="thumb">
+      <img src="./img/goods-2.jpg" alt="img">
+    </div>
+    <div class="info">
+      <h4>상품 제목 2</h4>
+      <p>간단한 설명 텍스트</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="thumb">
+      <img src="./img/goods-3.jpg" alt="img">
+    </div>
+    <div class="info">
+      <h4>상품 제목 3</h4>
+      <p>간단한 설명 텍스트</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="thumb">
+      <img src="./img/goods-4.jpg" alt="img">
+    </div>
+    <div class="info">
+      <h4>상품 제목 4</h4>
+      <p>간단한 설명 텍스트</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

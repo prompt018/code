@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>컬러메모지</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .memo {
+      width: 600px;
+      height: 700px;
+      margin: 100px auto;
+      border: 1px solid;
+    }
+    .yellow,      
+    .pink, .skyblue,
+    .red, .orange {
+      width: 500px;
+      height: 100px;
+      /*border: 1px solid #000;*/
+      margin: 30px auto;
+      box-shadow: 1px 3px 12px #333;
+    }
+    .y_color,.p_color,
+    .sky_color, .red_color,
+    .orange_color {
+      width: 110px;
+      height: 100px;
+      background-color: yellow;
+      display: inline-block;
+    }
+    .p_color {
+      background-color: orchid;
+    }
+    .sky_color{
+      background-color: skyblue;
+    }
+    .red_color {
+      background-color: red;  
+    }
+    .orange_color {
+      background-color: green;
+    }
+    .y_txt, .p_txt,
+    .sky_txt, .red_txt, .orange_txt {
+      width: 380px;
+      height: 100px;
+      background-color: rgb(250, 250, 250);
+      display: inline-block;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="memo">
+    <div class="yellow">
+      <div class="y_color"></div>
+      <div class="y_txt"></div>
+    </div>
+    <div class="pink">
+      <div class="p_color"></div>
+      <div class="p_txt"></div>
+    </div>
+    <div class="skyblue">
+      <div class="sky_color"></div>
+      <div class="sky_txt"></div>
+    </div>
+    <div class="red">
+      <div class="red_color"></div>
+      <div class="red_txt"></div>
+    </div>
+    <div class="orange">
+      <div class="orange_color"></div>
+      <div class="orange_txt"></div>
+    </div>
+  </div>
+</body>
+</html>
