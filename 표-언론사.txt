@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버-표 언론모음</title>
+    <style>
+     @font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: '양진체';
+    src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul, li {
+        list-style: none;
+      }
+      .wrap {
+        width: 1000px;
+        height: 600px;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+      table {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      tr, td {
+        border: 1px solid #ddd;
+      }
+      td {
+        width: 160px;
+      }
+
+      tr:first-child td:first-child:hover {
+        background-color: rgb(51, 32, 178);
+        cursor: pointer;
+        color: #fff;
+        
+      }
+      tr:nth-child(1) td:nth-child(3):hover {
+        font-weight: bold;
+      }
+      tr:nth-child(2) td:nth-child(5):hover {
+        font-weight: bold;
+        color: #0c0887;
+        background-color:lightsalmon;
+
+      }
+      tr:nth-child(4) td:nth-child(3):hover {
+        font-family: 'SBAggroB';
+        cursor: pointer;
+      }
+      tr:nth-child(3) td:nth-child(4):hover {
+        font-family: '양진체';
+        background-color: lightgoldenrodyellow;
+        color: #222;
+        letter-spacing: 2px;
+      }
+      .view {
+        width: 160px;
+        height: 300px;
+        background-color: blue;
+        color: #fff;
+        text-align: center;
+        display: none;
+        position: relative;
+        left: 0;
+        top: 100px;
+      }
+      .view ul li {
+        display: inline-block;
+        padding: 5px;
+      }
+
+    </style>
+</head>
+<body>
+  <div class="wrap">
+    <table>
+      <tr>
+        <td>한국경제TV</td>        
+        <td>전자신문</td>
+        <td>YTN</td>
+        <td>MBN</td>
+        <td>JTBC</td>
+        <td>스포츠서울</td>
+      </tr>
+
+      <tr>
+        <td>아시아경제</td>
+        <td>연합뉴스TV</td>
+        <td>데일리안</td>
+        <td>MBC</td>
+        <td>KBS</td>
+        <td>헤럴드 경제</td>
+      </tr>
+
+      <tr>
+        <td>B BLOTER</td>
+        <td>파이낸셜 뉴스</td>
+        <td>매일경제</td>
+        <td>세계일보</td>
+        <td>SBS 연예뉴스</td>
+        <td>KNN</td>
+      </tr>
+
+      <tr>
+        <td>이로운 넷</td>
+        <td>더수쿠프</td>
+        <td>시사워크</td>
+        <td>OBS</td>
+        <td>뉴스핌</td>
+        <td>텐아시아</td>
+      </tr>
+    </table>
+
+    <div class="view">
+      <ul>
+        <li>구독</li>
+        <li>|</li>
+        <li>기사보기</li>
+      </ul>
+    </div>
+    
+  </div> 
+</body>
+</html>

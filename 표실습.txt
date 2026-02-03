@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Ie=edge">
+    <style>
+
+    table {
+        width: 900px;
+        height: 400px;
+        border: 3px double black;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 24px;
+     /* border-spacing: 40px 30px ;*/
+        margin: 0 auto;
+     /* empty-cells: hide;*/
+    }
+    caption {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+        padding-bottom: 30px;
+        margin-top: 50px;
+    }
+    .t1 {
+        width: 900px;
+        height: 300px;
+        /*border: 2px solid black;*/
+        border-collapse: collapse;
+        text-align: center;
+    }
+    tr, td, th {
+       border: 1px dotted black;
+    }
+    .t1 tr, td, th {
+        border: 1px solid #333;
+     }
+    .cell2 {
+        vertical-align: bottom;
+    }
+    /* 테이블1 첫행 셀 색 지정하기  */
+    .row1 {
+        background-color: lightseagreen;
+    }
+    /* 테이블2 제목행 색 지정하기 */
+    .table2 th {
+        background-color: lightpink;
+    }
+    .table3 tr:nth-child(2),
+    .table3 tr:nth-child(3) {
+        background-color: yellow;
+    }
+    .t4 {
+        width: 1400px;
+        height: 300px; 
+    }
+    .cell_3 {
+        background-color: coral;
+    }
+    .t1 th:nth-child(1) {
+        border-left: hidden;    
+    }
+    .t1 th:nth-of-type(6),
+    .t1 td:nth-of-type(5)
+    {
+        border-right: hidden;
+    }
+    .test {
+        width: 300px;
+        height: 60px;
+        font-size: 15px;
+        border: 1px solid;        
+    }
+    .test tr, td {
+        border: 1px solid ;
+    }
+    </style>
+</head>
+
+<body>
+   <table class="t1">
+        <caption> 년도별 지역 카운트</caption><br><br>
+        <tr class="row1">
+            <th>지역</th>
+            <th>2019년</th>
+            <th>2020년</th>
+            <th>2021년</th>
+            <th>2022년</th>
+            <th>2023년</th>
+        </tr>
+        <tr>
+            <th>아시아</th>
+            <td>24</td>
+            <td>47</td>
+            <td>21</td>
+            <td>33</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <th>유럽</th>
+            <td>21</td>
+            <td>33</td>
+            <td>56</td>
+            <td>41</td>
+            <td>38</td>
+        </tr>
+        <tr>
+            <th>아메리카</th>
+            <td>24</td>
+            <td>38</td>
+            <td>24</td>
+            <td>43</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <th>내국인</th>
+            <td>19</td>
+            <td>27</td>
+            <td>25</td>
+            <td>36</td>
+            <td>30</td>
+        </tr>
+    </table><br><br>
+
+    <table class="table2">
+        <caption>2023 행사안내 ▶컨피런스룸◀</caption>
+        <tr>
+            <th>구분</th>
+            <th>일자</th>
+            <th>시간</th>
+            <th>행사명</th>
+            <th>장소</th>
+        </tr>
+        <tr>
+            <td rowspan="2">전문<br>콘피런스</td>
+            <td rowspan="2">3월3일(금)</td>
+            <td>10시</td>
+            <td>브랜드 정착을 위한 과제</td>
+            <td>콘피런스룸1</td>
+        </tr>
+        <tr>
+            <td>13시</td>
+            <td>기업 세미나 안내행사</td>
+            <td>콘피런스룸2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">오픈<br>콘피런스</td>
+            <td rowspan="2">3월 4일 (토)</td>
+            <td>13시30분</td>
+            <td>브랜드 특화 기업 세미나</td>
+            <td rowspan="2">콘퍼런스룸3</td>
+        </tr>
+        <tr>
+            <td>15시</td>
+            <td>해양문화와 해안의 가치 창출</td>
+        </tr>
+    </table><br><br><br><br>
+
+    <table class="table3">
+        <caption>◐ 봄 맞이 행사 안내 ◑</caption>
+        <tr>
+            <th>행사명</th>
+            <th>행사종류 </th>
+            <th>공모전 안내</th>
+        </tr>
+        <tr>
+            <td rowspan="2">전시및 공연행사</td>
+            <td>국제 도예작가 작품 초대전 및 학술 세미나</td>
+            <td rowspan="2">세계도자기 특별전 포함</td>
+        </tr>
+        <tr>
+            <td>외국인과 함께하는 고려왕실 행하 퍼레이드</td>
+        </tr>
+        <tr>
+            <td rowspan="2">체험및 부대행사</td>
+            <td>화목가마 불지피기, 명품청자 판매전, 고려 청자 빚기 체험</td>
+            <td rowspan="2">청자 종이 접기 체험 포함</td>
+        </tr>
+        <tr>
+            <td>고려청자 신비의 가마터 체험</td>
+        </tr>
+    </table><br><br><br><br>
+
+<table class="t4">
+    <caption>♠ 상담회 관련 주요 프로그램</caption>
+    <th>일   정</th>
+    <th>시   간</th>
+    <th>주   최</th>
+    <th>프로그램명</th>
+    <th>대   상</th>
+    <tr>
+        <td rowspan="2">04. 10</td>
+        <td rowspan="4">10:00 ~ 17:00 </td>
+        <td rowspan="4">대한무역투자 진흥공사 KOTRA</td>
+        <td>글로벌 유통기업 초청 입점 상담회</td>
+        <td class="cell_3">해외 글로벌 유통기업 15개사</td>
+    </tr>
+    <tr>
+        <td>교포 바이어 초청 수출 상담회</td>
+        <td class="cell_3">각 지역 교포 바이어 30개사 </td>
+    </tr>
+    <tr>
+        <td>04. 11</td>
+        <td>국제식품산업대전 2023</td>
+        <td class="cell_3">각 지역 유력 바이어 150개사</td>
+    </tr>
+    <tr>
+        <td>04. 10 ~ 04.14</td>
+        <td>국내 유통 바이어 상담회</td>
+        <td class="cell_3">참가업체</td>
+    </tr>
+</table>    
+    <br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<body>
+    <form>
+        
+            <label for="name">이름</label>
+            <div><input type="text" name="name"  required/>
+            <span>필수정보입니다.</span>
+            </div>
+       
+       
+            <label for="man">남자</label>
+            <input type="radio" name="gender" id="man" value="F"/>
+            <label for="woman">여자</label>
+            <input type="radio" name="gender" id="woman" value="M"/> <br>
+      
+      
+            <label>생년월일</label>
+            
+                <input type="text" placeholder="년도(4글자)" name="year" />
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option> <!--젠코더 확장하면  option*12>{$}적고 탭 하면된다-->
+                </select>
+                <span>월  필수정보입니다.</span><br>
+          
+                <select>
+                    <option>SKT</option>
+                    <option>KT</option>
+                    <option>LG U+</option>
+                    <option>알뜰폰</option>
+                </select>
+                <input type="text" placeholder="핸드폰번호 입력"/>
+                <input type="button" value="인증" /><br>
+            </div>
+                <input type="text" placeholder="인증번호" />
+                <input type="button" value="확인" /><br>
+                <label for="ID">ID&nbsp;&nbsp;&nbsp;</label>            
+                <input type="text" /><br>
+                <label for="pw">PW&nbsp;&nbsp;</label> 
+                <input type="text" /><br><br>
+                <label for="color">COLOR 선택</label> 
+                <input type="color" /><br><br>
+                <label for="file">파일선택</label> 
+                <input type="file" /> <button name="첨부완료" onclick="alert('파일을 확인하세요')">첨부완료</button>
+                <br> 
+                <label for="find">검색어를 입력하세요</label>
+                <input type="search" placeholder="검색어"><br>
+                <button type="submit">가입하기</button>
+           
+    </form>
+</body>
+</html>

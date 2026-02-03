@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        .form-login {
+            border: 2px solid rgb(59, 58, 58);
+            width: 400px;
+            padding: 30px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+        input[type=text],     /* 속성 선택자 [  ] 표시*/
+        input[type=password] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            box-sizing: border-box;   /*  18px 늘어난 사이즈 자동으로 잡아준다*/
+        }
+        input[type=checkbox] {}  
+        input[type=submit] {    /*  로그인 속성 선택자 [  ] 표시*/
+            width: 100%;
+            height: 40px;
+            background-color: dodgerblue;
+            color: #fff;
+            margin-top: 17px;
+            cursor: pointer;  
+        }
+    </style>
+</head>
+<body>
+    <div class="form-login">
+        <input type="text" placeholder="ID">
+        <input type="password" placeholder="PW">
+        <input type="checkbox"> <span>로그인 상태 유지하기</span>
+        <input type="submit" value="로그인">
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트 회원가입</title>
+    <style>
+        input[type=text] {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="개인회원">개인회원</label>
+        <input type="radio" id="개인회원" name="member">&nbsp;&nbsp;
+        <label for="단체회원">단체회원</label>
+        <input type="radio" id="단체회원" name="member">
+        <br>
+        <h3>기본정보</h3> <br>
+        <label for="아이디">아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="아이디">&nbsp;<span>(영문소문자,숫자,특수문자 조합 8글자이상)</span> <br><br>
+        <label for="비밀번호">비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="password" name="비밀번호">&nbsp;<span>(영문대소문자/숫자/특수문자 조합 10글자 이상)</span><br><br>
+        <label for="비밀번호 확인">비밀번호확인&nbsp;</label>
+        <input type="password" name="비밀번호 확인"><br><br>
+        <label for="비밀번호 질문">비밀번호질문&nbsp;</label>
+        <select>
+            <option>추억의 장소는?</option>
+            <option>보물 제1호는 ?</option>
+            <option>기억에 남는 인물은?</option>
+            <option>감명 깊던 책이름은?</option>
+            <option>그대 또 다시?</option>
+        </select><br>
+        <label for="비밀번호 확인 답변">비밀번호 확인답변&nbsp;</label>
+        <input type="text" name="pw" ><br><br><br>
+        <label for="이름">이름&nbsp;</label>
+        <input type="text" name="name" ><br><br>
+        <label for="휴대전화">휴대전화&nbsp;</label>
+        <input type="text" name="휴대전화"><br><br>
+        <label for="성별">성별&nbsp;&nbsp;</label>
+            <label for="man">남자</label>
+            <input type="radio" id="man" name="gender" value="man">
+            <label for="woman">여자</label>
+            <input type="radio" id="woman" name="gender" value="man"><br><br>
+        <label for="취미">취미&nbsp;&nbsp;</label>
+        <input type="checkbox"> <label for="등산">등산</label>
+        <input type="checkbox"> <label for="독서">독서</label>
+        <input type="checkbox"> <label for="음악감상">음악감상</label>
+        <input type="checkbox"> <label for="영화감상">영화감상</label>
+        <input type="checkbox"> <label for="스포츠">스포츠</label><br><br>
+        <label for="생일">생일&nbsp;&nbsp;</label>
+        <input type="text" name="출생생년">&nbsp;&nbsp;
+        <label for="몇월">태어난 월&nbsp;</label>
+        <input type="number" min="1"  max="12" name="출생월">&nbsp;&nbsp;
+        <label for="몇일">태어난 일&nbsp;</label>
+        <input type="number" min="1"  max="31" name="출생일">&nbsp;&nbsp;
+        
+        <br><br>
+    </form>
+</body>
+</html>

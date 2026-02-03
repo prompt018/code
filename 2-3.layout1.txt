@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 디자인-로그인</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 13px;
+            line-height:20px;
+        }
+
+        .container {
+            width: 900px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border:  1px solid #e8e8e8;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1.title {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            font-weight: normal;
+            font-size: 26px;    
+        }
+        /*.container >div {
+            float: left;
+            box-sizing: border-box;
+            background-color: burlywood;
+        } */
+        .container>div {
+            width: 650px;
+            color:blue;
+        }
+        /* .container >div:nth-of-type(2) {
+            width: 400px;
+            color: red;
+        } */ 
+
+        form.Login {
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 1px 1px lightgrey;
+            font-size: 20px;
+            width: 800px;
+        }
+
+        form.Login label {
+            font-weight: bold ;
+            font-size: 20px;
+            padding-left: 10px;
+        } 
+        .btn {           
+           font-size: 15px;
+           font-weight: bold;
+           margin-top: 20px;
+           padding: 5px;
+           width: 100px;
+           background-color: #dfdbdb;
+           box-shadow: 1px 1px lightgray;
+           border-radius: 5px;
+           margin-left:10px;
+        }
+        .btn:hover {
+            opacity: 0.5;
+        }     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">레이아웃디자인</h1>
+        <div class="login-form">
+            <form class="Login">
+                <label>E-mail&nbsp;&nbsp;</label><input type="text" placeholder="E-mail Address">
+                <label>Password&nbsp;&nbsp;</label><input type="Password" placeholder="Password">
+                <input type="checkbox" checked>&nbsp;로그인 상태 유지
+            </form>
+            <button class="btn">로그인</button>
+            <button class="btn">ID 찾기</button>
+            <button class="btn">PW 찾기</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q&A Table</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      /*background-color: #fff;*/
+      /*border: 1px solid #ddd;*/
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .header {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+    .qna-buttons {
+      display: flex;
+      justify-content: flex-start;
+      padding: 15px 20px;
+      gap: 10px;
+    }
+    .qna-buttons button {
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      background-color: #f4f4f4;
+      color: #333;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .qna-buttons button:hover {
+      background-color: #ddd;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table th, table td {
+      text-align: left;
+      padding: 12px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+    table th {
+      background-color: #f4f4f4;
+      color: #333;
+      font-weight: bold;
+      text-align: center;
+    }
+    table td {
+      background-color: #fff;
+    }
+    table td.center {
+      text-align: center;
+    }
+    .new-label {
+      color: red;
+      font-weight: bold;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      gap: 5px;
+    }
+    .pagination button {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ddd;
+      background-color: #f4f4f4;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+    .pagination button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Q & A</div>
+    <div class="qna-buttons">
+      <button>상품 Q&A 작성하기</button>
+      <button>나의 Q&A 조회하기</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 15%;">답변상태</th>
+          <th style="width: 55%;">제목</th>
+          <th style="width: 15%;">작성자</th>
+          <th style="width: 15%;">작성일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="center">답변완료</td>
+          <td>맘 가이드에 나온 제품과 같은 2세대 제품이 맞나요? <span class="new-label">NEW</span></td>
+          <td class="center">land***</td>
+          <td class="center">2025.12.03</td>
+        </tr>
+        <tr>
+          <td class="center">답변완료</td>
+          <td>비밀글입니다. <span class="new-label">NEW</span></td>
+          <td class="center">loc***</td>
+          <td class="center">2025.11.28</td>
+        </tr>
+        <tr>
+          <td class="center">답변완료</td>
+          <td>배송이 너무 늦어요 언제 되나요?</td>
+          <td class="center">qh***</td>
+          <td class="center">2025.11.26</td>
+        </tr>
+        <tr>
+          <td class="center">답변완료</td>
+          <td>비밀글입니다.</td>
+          <td class="center">shd***</td>
+          <td class="center">2025.11.23</td>
+        </tr>
+        <tr>
+          <td class="center">답변완료</td>
+          <td>제품이 잘못 왔어요</td>
+          <td class="center">rgd***</td>
+          <td class="center">2025.11.20</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+  </div>
+</body>
+</html>
+
+</body>
+</html>

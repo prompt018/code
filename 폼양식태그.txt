@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  body {
+   height: 8960px;
+  }
+ </style>
+</head>
+
+<body>
+ <form action="">
+  <label for="personal">개인회원</label>
+  <input type="radio" id="personal" name="member">
+  <label for="group">단체회원</label>
+  <input type="radio" id="group" name="member" checked>
+  <br>
+  <h3>기본정보</h3><br><br>
+  <label for="id">아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text"name="id" required><span>(영문소문자, 숫자, 특수문자 조합 8글자이상)</span><br><br>
+  <label for="pw">비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="password" id="pw"><span> (영문대소문자/숫자/특수문자 조합 10글자 이상)</span><br><br>
+  <label for="pw1">비밀번호확인&nbsp;&nbsp;</label>
+  <input type="password" id="pw1"><br><br>
+  <label for="question">비밀번호 질문&nbsp;</label>
+  <select name="ques" id="ques"><br><br>
+   <option value="q1">추억의 장소는?</option>
+   <option value="q2">보물 제1호는?</option>
+   <option value="q3">기억에 남는 인물은?</option>
+   <option value="q4">감명 깊던 책이름은?</option>
+   <option value="q5">그때 또 다시</option>
+  </select><br><br>
+  <label for="pw1">비밀번호 확인 답변</label>
+  <input type="text"><br><br>
+
+  <fieldset>
+   <legend>
+    <<개인정보입력>>
+   </legend>
+   <label for="name">이름</label>
+   <input type="text" required><br><br>
+   <label for="mobile">휴대전화</label>
+   <input type="tel"><br><br>
+   <label for="xy">성별</label>
+   <label for="man">남자</label>
+   <input type="radio" id="man" name="gender">
+   <label for="woman">여자</label>
+   <input type="radio" id="woman" name="gender"><br><br>
+   <label for="">취미</label>
+   <input type="checkbox" id="mountain">
+   <label for="mountain">등산</label>
+   <input type="checkbox" id="reading">
+   <label for="reading">독서</label>
+   <input type="checkbox" id="music">
+   <label for="music">음악감상</label>
+   <input type="checkbox" id="movie">
+   <label for="movie">영화감상</label>
+   <input type="checkbox" id="sports">
+   <label for="sports">스포츠</label><br><br>
+   <label for="birth">생일</label>
+   <input type="date" name="" id="">
+   <label for="month">태어난 월</label>
+   <input type="number" min="1" max="12">
+   <label for="day">태어난 일</label>
+   <input type="number" min="1" max="31"><br><br>
+   <label for="color">COLOR 선택</label>
+   <input type="color"><br><br>
+   <label for="file">파일선택</label>
+   <input type="file">
+   <input type="submit" value="첨부완료"><br><br>
+   <label for="search">검색어를 입력하세요</label>
+   <input type="search" placeholder="검색어입력"><br><br>
+   <label for="range">범위막대</label>
+   <input type="range" min="1" max="100" step="2"><br><br>
+   <select name="fruit" id="fr">
+    <option value="apple">사과</option>
+    <option value="banana">바나나</option>
+    <option value="orange">오렌지</option>
+    <option value="kiwi">키위</option>
+   </select><br><br>
+   <textarea name="memo" id="me" rows="10" cols="50">기본텍스트입력하세요</textarea>
+  </fieldset>
+  <input type="submit" value="가입하기">
+  <input type="submit" value="다시입력">
+  <input type="button" value="클릭" onclick="alert('입력을 확인하세요~~!!!')">
+ </form>
+
+</body>

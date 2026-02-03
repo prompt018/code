@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QnA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container { /*전체 감싸는 영역*/
+      width: 1000px;
+      height: 800px;
+      /*border: 1px solid ;*/
+      margin: 0 auto;
+      margin-top: 100px;
+    }
+    h1 {
+      width: 120px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    h4 {
+      padding-left: 10px;
+    }
+    button {
+      display: block;
+      float: left;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      margin: 20px 10px;
+      cursor: pointer;
+      background-color: #222;
+      color: #f8f9f5;
+      font-size: 14px;
+    }
+    table {
+      width: 1000px;
+      height: 450px;
+      border: 1px solid #ddd;
+      border-collapse: collapse;
+      margin: 10px auto;
+      font-size: 15px;
+    }
+    td:nth-child(1) { /*왼쪽 선 감추기*/
+      border-left: hidden;
+    }
+    td:nth-child(4) { /*오른쪽 선 감추기*/
+      border-right: hidden;
+    }
+    tr:nth-child(1) {
+      /*제목줄*/
+      border-top: 3px solid #222;
+      border-left: hidden;
+      /*제목줄 왼쪽 숨기기*/
+      border-right: hidden;
+      /*제목줄 오른쪽 숨기기*/
+    }
+    tr, td {
+      /*border: 1px solid #484848;*/
+      padding-left: 10px;
+    }
+    td:nth-child(1),
+    td:nth-child(4) { /*첫번째,네번째열 */
+      text-align: center;
+      padding-left: 0px;
+    }
+    tr:nth-child(1) { /*첫번째 행*/
+      border-bottom: 1px solid #555;
+    }
+    tr:nth-child(2),
+    tr:nth-child(3),
+    tr:nth-child(4),
+    tr:nth-child(5),
+    tr:nth-child(6),
+    tr:nth-child(7),
+    tr:nth-child(8),
+    tr:nth-child(9) { /*2~9행 아래쪽 점선*/
+      border-bottom: 1px dotted gray;
+    }
+    tr:nth-last-child(1) { 
+      /*마지막행 아래테두리*/
+      border-bottom: 2px solid ;
+    }
+    span {
+      color: red;
+      font-weight: 700;
+      font-size: 12px;
+      vertical-align: top;
+    }
+    .pageno { /*페이지번호 영역*/
+      width: 196px;
+      margin: 0 auto;
+      height: 40px;
+      /*background-color: lightcoral;*/
+      text-align: center;
+    }
+    .pageno>button { /*페이지버튼*/
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      background-color: #b9b8b8;
+      color: #1d1c1c;
+      margin: 2px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Q & A</h1>
+    <h4>구매하시려는 상품에 대해 궁금한 점이 있으신 경우 문의 해 주세요 </h4>
+    <button>상품 Q&A 작성하기</button>
+    <button>나의 Q&A 조회하기</button>
+    <!--테이블-->
+    <table>
+      <!--1행-->
+      <tr>
+        <th>답변상태</th>
+        <th>제목</th>
+        <th>작성자</th>
+        <th>작성일</th>
+      </tr>
+      <!--2행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">비밀글입니다. <span><i>NEW</i></span></a></td>
+        <td>h***</td>
+        <td>2024. 12. 09</td>
+      </tr>
+      <!--3행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">맘 가이드에 나온 제품과 같은 2세대 제품이 맞나요? <span><i>NEW</i></span></a></td>
+        <td>as***</td>
+        <td>2024. 12. 08</td>
+      </tr>
+      <!--4행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">배송이 너무 늦어요 언제 되나요</a></td>
+        <td>qh***</td>
+        <td>2024. 12. 06</td>
+      </tr>
+      <!--5행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">비밀글입니다.</a></td>
+        <td>w230***</td>
+        <td>2024. 12. 05</td>
+      </tr>
+      <!--6행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">비밀글입니다.</a></td>
+        <td>ty125***</td>
+        <td>2024. 12. 04</td>
+      </tr>
+      <!--7행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">제품이 잘못 왔어요</a></td>
+        <td>fre***</td>
+        <td>2024. 12. 03</td>
+      </tr>
+      <!--8행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">착용감이 최고에요</a></td>
+        <td>gh258***</td>
+        <td>2024. 11. 30</td>
+      </tr>
+      <!--9행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">비밀글입니다.</a></td>
+        <td>h***</td>
+        <td>2024. 11. 28</td>
+      </tr>
+      <!--10행-->
+      <tr>
+        <td>답변완료</td>
+        <td><a href="#">비밀글입니다.</a></td>
+        <td>h***</td>
+        <td>2024. 11. 27</td>
+      </tr>
+    </table>
+
+    <!--페이지번호-->
+    <div class="pageno">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-color</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .color1 {
+            width: 279px;
+            height: 450px;
+            /*border: 1px solid black;*/
+            overflow: hidden;
+            box-sizing: border-box;
+            float: left;
+            position: absolute;
+            top: 100px;
+            left: 20%;
+        }
+
+        .color2 {
+            width: 279px;
+            height: 450px;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+            box-sizing: border-box;
+            float: left;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .color3 {
+            width: 279px;
+            height: 450px;
+            /*border: 1px solid blue;*/
+            overflow: hidden;
+            box-sizing: border-box;
+            float: left;
+            position: absolute;
+            top: 100px;
+            right: 20%;
+        }
+
+        .color_img {
+            width: 277px;
+            height: 200px;
+            /* border: 1px solid black;*/
+            overflow: hidden;
+            box-sizing: border-box;
+            background-color: #78d7db;
+        }
+
+        .color_text {
+            width: 277px;
+            height: 250px;
+            background-color: #efd9ed;
+            padding-top: 5px;
+        }
+
+        ul {
+            width: 256px;
+            height: 250px;
+            /*border: 1px solid rgb(90, 8, 8);*/
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        li {
+            padding: 1px;
+            font-size: 20px;
+            /* border: 1px solid black;*/
+            line-height: 45px;
+            padding-left: 20px;
+        }
+
+        li span {
+            color: red;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .one_1 {
+            width: 100px;
+            height: 100px;
+            background-color: lightseagreen;
+            color: #fff;
+            font-size: 30px;
+            line-height: 100px;
+            z-index: 1;
+            position: absolute;
+            top: 50px;
+            left: 20%;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 100px;
+        }
+
+        .one_2 {
+            width: 140px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #333;
+           /* background-color: rgba(119, 152, 136, 0. 6);*/
+            color:#fff;
+            font-weight: 500;
+            font-size: 24px;
+            opacity: 0.6; 
+            z-index: 1;
+            position: absolute;
+            top: 270px;
+            left: 46%;
+            text-align: center;
+            border-radius: 20px;
+            /*transform: rotate(-20deg); */
+        }
+
+        .one_3 {
+            width: 100px;
+            height: 100px;
+            background-color: lightsalmon;
+            color: #fff;
+            font-size: 30px;
+            line-height: 100px;
+            z-index: 1;
+            position: absolute;
+            top: 500px;
+            right: 20%;
+            text-align: center;
+            border-radius: 100px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color1">
+        <div class="color_img">
+            <img src="./one01.PNG" alt="img">
+        </div>
+        <div class="color_text">
+            <ul>
+                <li>[꽃님이] 5월</li>
+                <li>제철꽃 6송이+6송이<br>(1송이 증정)</li>
+                <li><span>10,900원</span< /li>
+            </ul>
+        </div>
+    </div>
+    <div class="color2">
+        <div class="color_img">
+            <img src="./one02.PNG" alt="img">
+        </div>
+        <div class="color_text">
+            <ul>
+                <li>글라스락 플레인</li>
+                <li>머그 텀블러500ml</li>
+                <li><span>22,000원</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="color3">
+        <div class="color_img">
+            <img src="./one03.PNG" alt="img">
+        </div>
+        <div class="color_text">
+            <ul>
+                <li>[기프트박스 증정]</li>
+                <li>코코도르로즈 디퓨저<br>200ml</li>
+                <li><span>9,900원</span< /li>
+            </ul>
+        </div>
+    </div>
+    <div class="one_1"> 1+1 </div>
+    <div class="one_2">타임특가</div>
+    <div class="one_3"> 1+1 </div>
+</body>
+
+</html>

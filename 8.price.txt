@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>구매양식-폼</title>
+ <link href="price.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 전체 감싸는 박스 -->
+   <div class="box">
+     <h4> 110g X 110g X 2개 </h4>
+
+     <!-- 가격 -->
+      <div class="price">
+        <div class="text">9,370원 <span>(10ml당 852월) 쿠팡판매가</span></div>
+      
+         <!-- 수량선택 클릭버튼 -->
+        <div class="count">
+          <label for="일정" class="nae">내일 무조건 도착 &nbsp;</label>
+          <input type="number" min="1"  max="10" name="수량">&nbsp;&nbsp;
+          <input type="button" value="클릭하세요" onclick="alert('수량을 확인 하세요!!')">
+        </div>
+
+         <!-- 라디오 버튼 -->
+        <div class="choice">
+         <input type="radio" name="ok" value="라디오" id="to" checked/> <label for="to">내일(수)9/15 도착보장</label><br>
+
+        <input type="radio" name="ok" value="라디오" id="da" /> <label for="da">내일(수)새벽 7시전 도착보장</label><br><br>
+        <input type="checkbox" id="ok"> <label for="ok" class="nae">로켓선물</label>
+        </div>
+      <!-- 버튼 -->
+        <button><a href="https://www.coupang.com" target="_blank">로켓 와우로 바로 구매</a></button>
+        
+      </div>
+      
+   </div>
+   <br><br><br><br><br><br><br><br>
+</body>
+</html>
