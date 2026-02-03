@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>절대좌표를 이용한 가운데 정렬 </title>
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+  }
+  /*부모박스 요소*/
+  .movie {
+   width: 1000px;
+   height: 500px;
+   border: 2px solid gray;
+   background-color: darkslateblue; /*다크슬레이트블루*/
+   position: relative;
+   left: 50%;
+   transform: translate(-50%,0);
+   top: 200px;
+  }
+  
+  /*자식박스 요소*/
+  button {
+   width: 120px;
+   height: 120px;
+   line-height: 120px;
+   border-radius: 120px;
+   text-align: center;
+   border: none;
+   font-size: 30px;
+   background-color: antiquewhite;
+   position: absolute;
+  }
+  .prev {
+   top: 50%;
+   left: 10px;
+   transform: translate(0,-50%);
+   /*margin-top: -60px;*/   
+  }
+  .next {
+   top: 50%;
+   right: 10px;
+   /*margin-top: -60px;*/
+   transform: translate(0,-50%);
+  }
+  .play {
+   top: 50%;
+   left: 50%;
+   /*margin-top: -60px;
+   margin-left: -60px;*/
+   transform: translate(-50%,-50%);
+  }
+ </style>
+</head>
+<body>
+ <!--부모요소-->
+ <div class="movie">
+
+  <!--자식요소-->
+  <button class="prev">PREV</button>
+  <button class="play">▶</button>
+  <button class="next">NEXT</button>
+ </div>
+</body>
+</html>

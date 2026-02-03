@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴포함</title>
+    <link href="./system.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="conteiner">
+    <div class="header">실적 시스템</div>
+    <div class="aside">
+    <form>
+      <input type="text" placeholder="아이디 입력" required>
+      <input type="text" placeholder="비밀번호 입력" required><br>
+      <button>로그인</button>
+    </form>
+    
+        <ul class="nav">
+            <li>교육기관
+                <ul class="submenu">
+                    <li><a href="#">초등학교</a></li>
+                    <li><a href="#">중/고등학교</a></li>
+                    <li><a href="#">대학교</a></li>
+                </ul>
+            </li>
+
+            <li>건설/건축
+                <ul class="submenu">
+                    <li><a href="#">지역주거공간</a></li>
+                    <li><a href="#">건물/빌딩</a></li>
+                    <li><a href="#">공공기관</a></li>
+                </ul>
+            </li>
+
+            <li>견적내기
+                <ul class="submenu">
+                    <li><a href="#">개인회원</a></li>
+                    <li><a href="#">단체회원</a></li>
+                    <li><a href="#">비회원</a></li>
+                </ul>
+            </li>
+
+            <li>공지사항
+                <ul class="submenu">
+                    <li><a href="#">온라인 설명회</a></li>
+                    <li><a href="#">유지보수공사</a></li>
+                    <li><a href="#">보수공사 신고</a></li>
+                </ul>
+            </li>
+            <li>기타사항
+                <ul class="submenu">
+                    <li><a href="#">개인정보보호</a></li>
+                    <li><a href="#">증빙서류접수</a></li>
+                    <li><a href="#">Q&A</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button>견적신청</button>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+

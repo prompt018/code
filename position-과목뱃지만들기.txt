@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>포지션활용-이벤트 배너 예제</title>
+  <style>
+    body { 
+      width: 900px; 
+      margin: 60px auto; 
+      font-family: Arial, sans-serif; 
+    }
+
+    .title { 
+      font-size: 32px;
+      font-weight: 900; 
+      text-align: center; 
+      margin-bottom: 30px; 
+    }
+    .banner {
+      height: 120px;
+      border-radius: 16px;
+      padding: 22px 26px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.85);
+      font-size: 12px;
+      margin-bottom: 10px;
+      color:#0b1220;
+      font-weight: 700;
+    }
+    .headline { 
+      font-size: 24px; 
+      font-weight: 700; 
+    }
+    .sub { 
+      margin-top: 6px; 
+      font-size: 14px; 
+      opacity: 0.9; 
+    }
+
+    /* 배너 배경 */
+    .b1 { background: #ef4444; color: #fff; }
+    .b2 { background: #3b82f6; color: #fff; }
+    .b3 { background: #22c55e; color: #0b1220; }
+
+    /* 장식 원(포지션 연습) */
+    .circle {
+      width: 140px; 
+      height: 140px;
+      border-radius: 100%;
+      position: absolute;
+      right: -40px; 
+      top: -40px;
+      background: rgba(255,255,255,0.25);
+    }
+    .circle2 {
+      width: 90px; 
+      height: 90px;
+      border-radius: 100%;
+      position: absolute;
+      right: 40px; 
+      bottom: -30px;
+      background: rgba(255,255,255,0.18);
+    }
+  </style>
+</head>
+<body>
+  <div class="title">이벤트 배너 UI</div>
+
+  <div class="banner b1">
+    <div class="circle"></div><div class="circle2"></div>
+    <div class="tag">LIMITED</div>
+    <div class="headline">오늘만 50% 할인</div>
+    <div class="sub">쿠폰 자동 적용 · 자정까지</div>
+  </div>
+
+  <div class="banner b2">
+    <div class="circle"></div><div class="circle2"></div>
+    <div class="tag">NEW</div>
+    <div class="headline">신규 강의 오픈</div>
+    <div class="sub">실전 프로젝트 과정</div>
+  </div>
+
+  <div class="banner b3">
+    <div class="circle"></div><div class="circle2"></div>
+    <div class="tag">COUPON</div>
+    <div class="headline">첫 수강 1만원 지원</div>
+    <div class="sub">상담 신청 시 쿠폰 발급</div>
+  </div>
+</body>
+</html>
