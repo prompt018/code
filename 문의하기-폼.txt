@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문의하기-폼</title>
+  <style>
+    /* 기본 배경 (Fixed로 화면 전체 덮기) */
+.overlay-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 어두운 반투명 배경 */
+}
+
+/* [1] 중앙 정렬된 폼 박스 */
+.contact-box {
+  width: 450px;  
+  position: absolute;
+  top: 50%;
+  left: 50%;    
+  transform: translate(-50%, -50%);/*화면 정중앙에 배치 */ 
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+/* [2] Table 스타일링 (레이아웃 보조) */
+.form-table {
+  width: 100%;
+  border-collapse: collapse; /* 테두리 겹침 방지 */
+  margin: 20px 0;
+}
+
+.form-table th {
+  width: 100px;
+  text-align: left;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.form-table td {
+  padding: 10px 0;
+}
+
+/* 입력창들 공통 스타일 */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* 패딩이 너비에 포함되도록 함 */
+}
+
+/* [3] 전송 버튼 (Hover 효과에 transform 사용) */
+.send-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.send-btn:hover {
+  /* 마우스를 올리면 살짝 위로 뜨고 커지는 효과 */
+  transform: translateY(-3px) scale(1.02);
+  background: #0056b3;
+}
+
+/* [4] 구석에 배치된 X 버튼 */
+.close-icon {
+position: absolute;
+top: 15px;
+right: 15px;
+cursor: pointer;
+font-size: 18px;
+}
+  </style>
+</head>
+<body>
+  <div class="overlay-bg">
+    <div class="contact-box">
+        <h2>문의하기</h2>
+        <p>내용을 입력해 주시면 빠르게 답변해 드립니다.</p>
+        
+        <form>
+            <table class="form-table">
+                <tr>
+                    <th><label for="name">성함</label></th>
+                    <td><input type="text" id="name" placeholder="홍길동"></td>
+                </tr>
+                <tr>
+                    <th><label for="category">문의 유형</label></th>
+                    <td>
+                        <select id="category">
+                            <option>일반 문의</option>
+                            <option>기술 지원</option>
+                            <option>피드백</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="msg">내용</label></th>
+                    <td><textarea id="msg" rows="4" placeholder="메시지를 입력하세요"></textarea></td>
+                </tr>
+            </table>
+
+            <button type="submit" class="send-btn">전송하기</button>
+        </form>
+
+      <span class="close-icon">❌</span>
+    </div>
+</div>
+</body>
+</html>
