@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컬러질라</title>
+    <link href="./color.css" rel="stylesheet">
+    <style>
+        @charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+.container {
+    width: 1200px;
+    height: 630px;
+    border: 1px solid #999;
+    margin: 100px auto;
+}
+.logo {
+    width: 1120px;
+    height: 90px;
+    margin: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+.logo img {
+    width: 800px;
+    height: 90px;
+}
+.main {
+    width: 1160px;
+    height: 400px;
+   /* border: 2px solid black;*/
+    margin: 30px auto;
+}
+.left {
+    width: 550px;
+    height: 380px;
+    /*border: 2px solid black; */ 
+    float: left;
+    margin: 10px;
+    box-shadow: -10px 0px 15px lightgrey;
+    text-align: center;
+}
+.left>img {
+    padding-top: 5px;
+}
+.right {
+    width: 550px;
+    height: 380px;
+    /*border: 2px solid darkmagenta;*/
+    float: left;
+    margin: 10px;
+    box-shadow: 10px 0px 15px lightgrey;
+    box-sizing: border-box;
+    text-align: center;
+}
+.right>img {
+    padding-top: 5px;
+}
+.btm {
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    /*border: 1px solid black;*/
+    margin: 30px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+.btm ul {
+    display: inline-block; 
+}
+ul li {
+    float: left;
+    /*border: 1px solid ;*/
+    padding: 0 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./logo.JPG">
+        </div>
+        <div class="main">
+            <div class="left"><img src="./01.JPG" alt="이미지1"></div>
+            <div class="right"><img src="./02.JPG" alt="이미지2"></div>
+        </div>
+        <div class="btm">
+            <ul>
+                <li><a href="#">ⓒ 2004-2019 iosart labs lic</a></li>
+                <li><a href="#"> | </a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#"> | </a></li>
+                <li><a href="#">tems of use</a></li>
+                <li><a href="#"> | </a></li>
+                <li><a href="#">privacy policy</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
