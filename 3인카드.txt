@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>프로필 카드 예제</title>
+  <style>
+    /*전체 감싸는 영역*/
+    body { 
+      width: 980px; 
+      margin: 60px auto; 
+      font-family: Arial, sans-serif; 
+      /*border: 1px solid red;*/
+    }
+
+    .title {  /*타이틀*/
+      font-size: 32px; 
+      font-weight: 900;
+      text-align: center; 
+      margin-bottom: 30px; 
+    }
+
+    .card-wrap {  /*card 전체감싸는 영역 */
+      text-align: center; 
+      /*border: 1px solid ;*/
+    }
+
+    .card { /*card*/
+      width: 280px;
+      display: inline-block;
+      vertical-align:top ;/*수평가운데 위쪽 맞춤*/
+      margin: 0 10px 20px;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .avatar { /*이미지 영역*/
+      width: 72px; 
+      height: 72px;
+      border-radius:100%;
+      display: inline-block;
+      background: #cbd5e1;
+      vertical-align: middle;
+    }
+    .avatar img { /*이미지*/
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+    .info { /*이름 역할 영역*/
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 12px;
+      width: 170px;
+    }
+    .name {  
+      font-size: 18px; 
+      font-weight: 700; 
+    }
+    .role { 
+      font-size: 13px; 
+      color: #6b7280; 
+      margin-top: 3px; }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-top: 14px;
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    .desc {  
+      margin-top: 10px; 
+      font-size: 14px; 
+      color: #111827; 
+      line-height: 1.5; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #111827;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">프로필 카드 UI</div>
+
+  <div class="card-wrap">
+    <div class="card">
+      <div class="avatar">
+        <img src="../images/profile-5.png" alt="">
+      </div>
+      <div class="info">
+        <div class="name">백장미</div>
+        <div class="role">웹/UIUX 강사</div>
+      </div>
+      <div class="badge">Portfolio 중심</div>
+      <div class="desc">기획부터 퍼블리싱까지 결과물 완성에 집중합니다.</div>
+      <a class="btn" href="https://www.google.com" target="_blank">프로필 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="avatar">
+        <img src="../images/profile-2.png" alt="">
+      </div>
+      <div class="info">
+        <div class="name">천송이</div>
+        <div class="role">성실한 수강생</div>
+      </div>
+      <div class="badge">Beginner</div>
+      <div class="desc">HTML/CSS 기본기를 다지고 WEB에 도전 중입니다.</div>
+      <a class="btn" href="https://github.com/prompt018/code" target="_blank">학습자료</a>
+    </div>
+
+    <div class="card">
+      <div class="avatar">
+         <img src="../images/profile-3.png" alt="">
+      </div>
+      <div class="info">
+        <div class="name">참다운</div>
+        <div class="role">교육 매니저</div>
+      </div>
+      <div class="badge">Support</div>
+      <div class="desc">출결/공지/상담을 도와 수업이 원활하게 진행되게 합니다.</div>
+      <a class="btn" href="https://www.naver.com" target="_blank">공지 확인</a>
+    </div>
+  </div>
+</body>
+</html>
