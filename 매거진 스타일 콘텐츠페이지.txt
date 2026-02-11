@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>매거진 스타일 콘텐츠 페이지</title>
+  <style>
+    /* 기본 설정 */
+body {
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.8;
+    /*padding: 0 0 100px 0; 위 여백 제거 */
+    padding: 100px 0; /* 위 여백 생김*/
+}
+
+.article-wrapper {
+    width: 650px;
+    margin: 0 auto;
+    position: relative; /* 카테고리 태그의 기준 */
+    background: #f3f4fb;
+    padding: 40px;
+    border: 1px solid #e3e2e2;
+}
+
+/* 1. Position 활용: 카테고리 태그 */
+.category-tag {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    background-color: #0a0e2a;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.main-title {
+    font-size: 42px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #888;
+}
+
+.divider {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #000;
+}
+
+/* 2. Float 활용: 본문 속 이미지 */
+.side-image-container {
+    float: right; /* 이미지를 오른쪽으로 보내고 글자가 감싸게 함 */
+    width: 250px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: 180px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    line-height: 180px;
+    font-weight: bold;
+}
+.photo  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-caption {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* 3. Float 활용: 인용구 */
+.pull-quote {
+    float: left; /* 인용구를 왼쪽으로 보내고 글자가 감싸게 함 */
+    width: 200px;
+    font-style: italic;
+    font-size: 18px;
+    color: #555;
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin: 20px 20px 20px 0;
+}
+
+.text-p {
+    margin-bottom: 20px;
+    text-align: justify; /* 양쪽 정렬 */
+}
+
+/* 4. Position 활용: 작성자 카드 */
+.author-card {
+    margin-top: 50px;
+    padding: 20px;
+    background: #f6dcdc;
+    position: relative;
+}
+
+.author-thumb {
+    width: 50px;
+    height: 60px;
+    background: #0a0e2a;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.author-info {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+}
+
+/* 5. Fixed 활용: 하단 바 */
+.read-progress {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #0a0e2a;
+    border-top: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+  </style>
+</head>
+<body>
+  <div class="article-wrapper">
+  <span class="category-tag">TRAVEL</span>
+
+  <h1 class="main-title">잊지 못할 겨울, <br>북유럽의 오로라</h1>
+  <p class="subtitle">자연이 선사하는 가장 위대한 빛의 향연을 찾아서</p>
+
+  <hr class="divider">
+
+  <div class="content-body">
+    <div class="side-image-container">
+      <div class="photo">
+        <img src="../images/0lola.jpg" alt="img">
+      </div>
+      <p class="photo-caption">노르웨이 트롬쇠의 밤하늘</p>
+    </div>
+
+    <p class="text-p">
+      오로라는 태양에서 날아온 전하 입자가 지구 자기장에 이끌려 대기로 진입하며 공기 분자와 충돌해 빛을 내는 현상입니다. 
+      이 마법 같은 빛의 커튼을 보기 위해서는 인내심이 필요합니다. 도시의 불빛에서 멀리 떨어져야 하며, 
+      구름 한 점 없는 맑은 하늘이 허락되어야만 하죠. 
+    </p>
+
+    <p class="text-p">
+      많은 여행자가 북유럽의 추위를 견디며 밖에서 기다리는 이유는 단 하나입니다. 
+      머리 위로 일렁이는 초록빛 물결을 마주하는 순간, 그 모든 고생이 눈 녹듯 사라지기 때문입니다. 
+      검은 밤하늘에 흩뿌려진 별들 사이로 춤추는 오로라는 마치 다른 행성에 와 있는 듯한 착각을 불러일으킵니다.
+    </p>
+
+    <blockquote class="pull-quote">
+        "오로라는 눈으로 보는 것이 아니라, 영혼으로 느끼는 것이다."
+    </blockquote>
+
+    <p class="text-p">
+      겨울 여행의 백미는 역시 모닥불 앞에 앉아 따뜻한 코코아를 마시며 다음 오로라가 나타나길 기다리는 시간입니다. 
+       함께 여행하는 동료들과 나누는 이야기는 밤을 더욱 깊고 풍성하게 만들어 줍니다.
+    </p>
+  </div>
+
+  <div class="author-card">
+    <div class="author-thumb">JK</div>
+    <div class="author-info">
+      <strong>Editor. Olora</strong>
+      <p>여행과 사진을 사랑하는 에디터입니다.</p>
+     </div>
+  </div>
+ </div>
+
+ <div class="read-progress">
+   다음 기사: 아이슬란드의 빙하 동굴 탐험하기
+ </div>
+
+</body>
+</html>

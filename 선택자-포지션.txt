@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posion- 선택자</title>
+    <style>
+        .wrap {
+            width: 1000px;
+            height: 1150px;
+            border: 1px  solid #ddd;
+            margin: 0 auto;
+            margin-top:50px ;
+        }
+        .left {
+            float: left;
+            width: 750px;
+            height: 500px;
+            /*border: 1px solid black;*/
+            box-sizing: border-box;
+            overflow: hidden; 
+            background: url(./img/shopping-4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #222;
+            position: relative;
+        }
+        .left .text {
+            position: absolute;
+            bottom: 0px;
+            height: 250px;
+            width: 280px;
+            background-color: rgba(191, 191, 67, 0.6);
+            padding: 10px;
+            box-sizing: border-box;
+            font-weight: 700;
+        }
+        .left img {
+            display: block;
+            border: none;           
+        }
+        .left .text h2 {
+            margin-left: 10px;            
+            /*border: 1px solid;*/
+        }
+        .left p{
+            padding-left: 10px;
+            line-height: 1.5;
+        } 
+        .right {
+            float: right;
+            width: 250px;
+            height: 500px;
+            border: 1px solid #333;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .right img {
+            display: block;
+            width: 250px;
+            height: 250px;          
+        }
+        .multi-box div{
+            width: 250px;
+            height: 250px;
+           /* border: 1px solid black;*/
+            float:left;
+           /* display: inline-block; */
+            box-sizing: border-box; 
+        }
+        .multi-box div h3 {
+            padding-left: 10px;
+        }
+        .multi-box div p {
+            padding-left: 10px;
+        }
+        .multi-box div:nth-child(2n+1) {
+            background-color: skyblue;
+        }
+        .multi-box div:nth-child(2n) {
+            background-color:violet;
+        }
+        .yellow-box div {
+            width: 250px;
+            height: 500px;
+            background-color: yellow;
+            float: right;
+        }
+        footer{
+            clear: both;
+            width: 1000px;
+            height: 150px;
+            background-color: #333;
+        }
+        .text ul {
+            width: 850px;
+            height: 150px;
+            font-size: 18px;
+            padding-top: 10px;
+            float: left;
+                }
+        .text ul li {
+            list-style: none;
+            float: left;
+            color: #fff;
+        }
+        .text ul li>a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding-left: 15px;
+            padding-right: 15px;
+           
+        }
+        select{
+            width: 200px;
+            padding: 6px;
+            float: right;
+            margin-right: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+            border: 1px solid rgb(218, 217, 217);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left">
+            <div class="text">
+            <h2>GLOBAL</h2>
+            <p>
+             GLOBAL No.1 <br> lifestyle,<br> Media Shopping Leader<br> 
+             라이프스타일을 선도하는 <br> 세계최고의 미디어 쇼핑리더
+            </p>
+        </div>
+           <!-- <img src="./0320-1.jpg" alt="">-->            
+        </div>
+        <div class="right">
+            <img src="./img/shopping-2.jpg" alt="">
+            <img src="./img/shopping-3.jpg" alt="">
+        </div>
+        <div class="yellow-box">
+            <div></div>
+        </div>
+        <div class="multi-box">
+            <div>
+                <h3>CSV</h3>
+                <p>
+                    상생 이념을 통해 함께 성장하고<br> 
+                    사회에 공헌하는 CSV프로그램과<br>
+                    활동소식을 안내합니다.<br>
+                </p>
+            </div>
+            <div>
+                <h3>입점안내</h3>
+                <p>
+                    고객에게 늘 새롭고 Trendy한 <br>제안을 하는 CJ O Shopping! <br>힘찬도약을 함께 할 동반자를<br> 찾습니다.
+                </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+       
+        <footer>
+            <select>
+                <option>cj 그룹계열사바로가기</option>
+                <option>tvN</option>
+                <option>티빙</option>
+            </select>
+            <div class="text">
+                <ul>
+                    <li><a href="#">법적고지</a></li>
+                    <li>|</li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li>|</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">고객센터</a></li>
+                    <li>|</li>
+                    <li><a href="#">입찰공고</a></li>
+                </ul>
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
