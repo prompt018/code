@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left_user">
+      <div class="user_top">
+        <img src="../images/profile-2.png" alt="img">
+        <h2>사용자 이름</h2>
+        <p>Web Site Layout</p>
+      </div>
+      <div class="userboard">
+        <table>
+          <tr>
+            <td>대시보드</td>
+          </tr>
+          <tr>
+            <td>메세지</td>
+            <td class="num">
+              <span>5</span>
+            </td>
+          </tr>
+          <tr>
+            <td>설정</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="right_board">
+      <div class="right_board_main">
+        <h2 class="title">Welcome Back!</h2>
+        <p class="txt">오늘의 작업 현황을 확인하세요.</p>
+        <span>+</span>
+      </div>
+
+      <div class="user_work">
+        <div class="ui_info">
+          <ul>
+            <li>진행 중인 작업</li>
+            <li>UI 디자인 수정</li>
+            <li>CSS 레이아웃 검토</li>
+            <li>고객 미팅 준비</li>
+          </ul>
+        </div>
+        <div class="user_count">
+          <div class="user_visitant">
+            방문자<br>1,200
+          </div>
+          <div class="user_click">
+            클릭수 <br> 450
+          </div>
+          <div class="user_share">
+            공유 <br>89
+          </div>
+          <div class="user_like">
+            좋아요 <br>210
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
