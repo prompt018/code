@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform-4개카드 지정하기</title>
+  <style>
+    /* 기본 레이아웃 설정 */
+body {
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    text-align: center; /* 자식 요소들을 가운데로 정렬 */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: inline-block; /* flex 대신 가로 배치를 위해 사용 */
+    background-color: #3498db;
+    color: white;
+    /*line-height: 150px;*/
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* 애니메이션 효과를 위해 필수! */
+    vertical-align: middle;
+}
+
+/* --- Transform 효과 적용 --- */
+
+/* 1. 이동: 마우스를 올리면 위로 20px 이동 */
+.move:hover {
+    transform: translateY(-20px);
+    background-color: #e74c3c;
+}
+
+/* 2. 회전: 마우스를 올리면 45도 회전 */
+.rotate:hover {
+    transform: rotate(45deg);
+    background-color: #f1c40f;
+}
+
+/* 3. 크기: 마우스를 올리면 1.2배 커짐 */
+.scale:hover {
+    transform: scale(1.2);
+    background-color: #2ecc71;
+}
+
+/* 4. 기울기: 마우스를 올리면 옆으로 살짝 비틂 */
+.skew:hover {
+    transform: skewX(-20deg);
+    background-color: #9b59b6;
+}
+/* 5. 이동: 마우스를 올리면 아래로 100px 이동 */
+.moveb:hover {
+    transform: translateY(100px);
+    background-color: #3015b8;
+}
+  </style>
+</head>
+<body>
+ <h1 style="text-align: center;">Transform Gallery</h1>
+
+    <div class="container">
+        <div class="box move">Translate
+            <br><br>마우스 올리면 위로 20px 이동
+        </div>
+        
+        <div class="box rotate">Rotate
+            <br><br>마우스 올리면 45도회전
+        </div>
+        
+        <div class="box scale">Scale
+            <br><br>마우스 올리면 1.2배커짐
+        </div>
+        
+        <div class="box skew">Skew
+            <br><br>마우스 올리면 오른쪽으로 살짝 비틀기
+        </div>
+
+        <div class="box moveb">Translate
+            <br><br>마우스 올리면 아래쪽으로 50px 이동
+        </div>
+    </div> 
+</body>
+</html>
