@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마우스 호버시 커지는 카드 만들기</title>
+  <style>
+.card {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 100px auto 20px;
+  text-align: center;
+  /* 부드러운 변화를 위해 transition 추가 */
+  transition: transform 0.3s ease;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  /* 1.1배 확대 */
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.rotate-btn {
+  padding: 15px 30px;
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0px auto;
+}
+
+.rotate-btn:hover {
+  /* 시계 방향으로 15도 회전 */
+  transform: rotate(15deg);
+  background-color: #e84118;
+}
+</style>
+</head>
+<body>
+  <div class="card">
+  <img src="../images/Hiking.jpg" alt="Sample">
+  <p>마우스를 올려보세요!</p>
+</div>
+<button class="rotate-btn">Click Me!</button>
+
+
+</body>
+</html>
