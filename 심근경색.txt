@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <link href="./style.css" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+ 
+body {
+  position: relative;
+}
+a {
+   text-decoration: none;
+   color :inherit;
+}
+.main {
+   width: 700px;
+   height: 500px;
+   border:2px solid #bab9b9 ;
+   background:linear-gradient(16deg,#928585 0%, #d8d8d6 30%, #a8b9a8 60%, #d9bbbb 90%);
+   position: absolute;
+   top:150px;
+   left: 50%;
+   transform:translateX(-50%);
+   color: #333;
+}
+.title {
+   width:500px;
+   height:100px;
+   /*border: 1px solid black;*/
+   background-color: #fff;
+   box-shadow: 5px 0px 10px gray;
+   position: absolute;
+   top: -80px;
+   left: 15%;
+   
+   
+}
+.title>img {
+   width: 70px;
+   height: 70px;
+   padding: 15px;
+   float: left;
+}
+.sub_title {
+   /*width:360px ;
+   height: 70px;*/
+   float: left;
+   /*border: 1px solid black; */
+   margin-left: 30px;
+   margin-top: 10px;
+   font-size: 30px;
+   padding-top: 20px;
+   color: red;
+   font-size: 40px;
+   font-family: 'Black Han Sans', 산세리프;
+}
+.text {
+   width: 420px;
+   height: 170px;
+   /* background-color: #fff;*/
+   position: absolute;
+   top:10%;
+   left: 15%;
+   font-size: 24px;
+   font-weight: bold;
+   line-height: 35px;
+   color :#fff;
+}
+.img{
+ width: 650px;
+ height: 200px;
+ /* border: 1px solid black;*/
+ position: absolute;
+ bottom: 10%;
+ left: 20px;
+
+}
+.left_img>img {
+  width: 280px;
+  height: 180px;
+  float: left;
+  padding: 10px;
+  transform: rotate(-5deg);
+  border: 6px solid rgb(217, 127, 9);
+  background-color: #fff;
+  border-radius: 30px;
+}
+.right_img>img {
+ width: 280px;
+ height: 180px;
+ float: right;
+ padding: 10px;
+ transform: rotate(10deg);
+ border: 6px solid violet;
+ background-color: #fff;
+ border-radius: 30px;
+} 
+</style>
+</head>
+<body>
+  <div class="main">
+    <div class="title"> 
+      <img src="./1.PNG" alt="이미지"> 
+      <div class="sub_title">
+        <a href="#">심근경색의 응급 증상</a></div>
+    </div>
+    <div class="body">
+      <div class="text">
+        <ul>
+           <li><a href="#">극심한 가슴통증이 20분 이상 지속</a></li>
+           <li><a href="#">통증확산 : 턱, 목, 등, 팔</a></li>
+           <li><a href="#">식은 땀, 구토, 현기증</a></li>
+           <li><a href="#">갑작스러운 호흡곤란</a></li>
+        </ul>
+       </div>
+       <div class="img">
+        <div class="left_img"><img src="./2.PNG"></div>
+        <div class="right_img"><img src="./3.PNG"></div>
+       </div>
+    </div>
+  </div>
+</body>
+</html>
