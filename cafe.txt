@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cafe</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+/* ===== 헤더 ===== */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #3e2723;
+    color: white;
+    padding: 20px;
+    z-index:1;
+    /*transition: background 0.3s;*/
+  }
+
+  header.scrolled {
+    background: #1b1b1b;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .nav {
+    list-style: none;
+    float: right;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav a:hover {
+    color: #ffcc80;
+  }
+
+  /*메인 타이틀*/
+  .title{
+    height: 500px;
+    background: #795548;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+  }
+
+  /* ===== 메뉴 ===== */
+  .menu {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .menu-card {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    vertical-align: top;
+    transition: transform 0.3s;
+  }
+
+  .menu-card:hover {
+    transform: scale(1.05);
+  }
+
+  .menu-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* ===== 연락처 ===== */
+  .contact {
+    padding: 80px 20px;
+    background: #eee;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    margin: 20px auto;
+  }
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #3e2723;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #5d4037;
+  }
+
+  /* ===== 푸터 ===== */
+  footer {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+   <!-- 헤더 -->
+    <header id="header">
+        <div class="logo">Cafe Today</div>
+        <ul class="nav">
+            <li><a href="#">홈</a></li>
+            <li><a href="#menu">메뉴</a></li>
+            <li><a href="#contact">문의</a></li>
+        </ul>
+    </header>
+
+    <!-- 메인 배너 -->
+    <section class="title">
+        <h1>향기로운 커피 한 잔의 여유</h1>
+        <p>당신의 하루를 따뜻하게 만들어 드립니다.</p>
+    </section>
+
+    <!-- 메뉴 -->
+    <section class="menu" id="menu">
+        <h2>Best Menu</h2>
+
+        <div class="menu-card">
+            <img src="../images/cafe-1.jfif" alt="아메리카노">
+            <h3>아메리카노</h3>
+            <p>₩4,000</p>
+        </div>
+
+        <div class="menu-card">
+            <img src="../images/cafe-2.jfif" alt="카페라떼">
+            <h3>카페라떼</h3>
+            <p>₩4,500</p>
+        </div>
+
+        <div class="menu-card">
+            <img src="../images/cafe-3.jfif" alt="티라미수">
+            <h3>티라미수</h3>
+            <p>₩7,000</p>
+        </div>
+
+        <div class="menu-card">
+            <img src="../images/cafe-4.jfif" alt="애플티">
+            <h3>애플티</h3>
+            <p>₩4,500</p>
+        </div>
+
+        <div class="menu-card">
+            <img src="../images/cafe-5.jfif" alt="딸기크림라떼">
+            <h3>쵸코크림라떼</h3>
+            <p>₩6,000</p>
+        </div>
+
+        <div class="menu-card">
+            <img src="../images/cafe-6.jfif" alt="마카롱">
+            <h3>마카롱</h3>
+            <p>₩15,000</p>
+        </div>
+
+    </section>
+
+    <!-- 연락처 -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="이름" required>
+            <input type="email" placeholder="이메일" required>
+            <textarea placeholder="메시지를 입력하세요" required></textarea>
+            <button type="submit">보내기</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Cafe Today</p>
+    </footer>
+</body>
+</html>
